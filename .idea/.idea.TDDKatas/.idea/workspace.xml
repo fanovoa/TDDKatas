@@ -12,6 +12,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fanovoa"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/fanovoa/TDDKatas.git",
@@ -45,6 +51,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="40d80281-4954-4552-849e-b29160404832" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2c07529b-b161-4ab0-a09f-6cc003f907c3" name="Changes" comment="" />

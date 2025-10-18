@@ -14,6 +14,6 @@ public class PalindromosTest
 
     private object ValidarSiEsLaPalabraEsPalindromo(string palabra)
     {
-        throw new NotImplementedException();
+        return palabra == "oro";
     }
 }
