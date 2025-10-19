@@ -1,36 +1,23 @@
 ﻿using FluentAssertions;
+using Xunit.Sdk;
 
 namespace TDDKatas.Palindromos;
 
 public class PalindromosTest
 {
-    [Fact]
-    public void Si_Ingreso_La_Palabra_oro_debe_retornar_true()
+    [Theory]
+    [InlineData("oro")]
+    [InlineData("ana")]
+    [InlineData("radar")]
+    public void Si_ingreso_una_palabra_palindromo_en_minuscula_debe_retornar_true(string palabra)
     {
-        var palabra = "oro";
         var esPalindromo = ValidarSiEsLaPalabraEsPalindromo(palabra);
         esPalindromo.Should().Be(true);
     }
-
-    [Fact]
-    public void Si_Ingreso_La_Palabra_ana_debe_retornar_true()
+    
+    private bool ValidarSiEsLaPalabraEsPalindromo(string palabra)
     {
-        var palabra = "ana";
-        var esPalindromo = ValidarSiEsLaPalabraEsPalindromo(palabra);
-        esPalindromo.Should().Be(true);
-    }
-
-    [Fact]
-    public void Si_Ingreso_La_Palabra_radar_debe_retornar_true()
-    {
-        var palabra = "radar";
-        var esPalindromo = ValidarSiEsLaPalabraEsPalindromo(palabra);
-        esPalindromo.Should().Be(true);
-        
-    }
-
-    private object ValidarSiEsLaPalabraEsPalindromo(string palabra)
-    {
-        return palabra == "oro" || palabra == "ana" || palabra == "radar";
+        var palabraAlReves = palabra.ToCharArray().Reverse();
+        return palabra == new string(palabraAlReves.ToArray());
     }
 }
