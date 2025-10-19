@@ -81,6 +81,14 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be(esperado);
     }
+
+    [Fact]
+    public void Si_ingreso_5_mas_3_DEBE_Retornar_8()
+    {
+        var calculadora = new Calculadora("5+3");
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("8");
+    }
     
 }
 

@@ -20,6 +20,7 @@ public class Calculadora(string cadena)
         if(ContieneCaracteresNoPermitidos()) return MENSAJE_ERROR;
         if( SoloContieneOperadores()) return MENSAJE_ERROR;
         if(!EsUnaCombinacionValidaOperador()) return MENSAJE_ERROR;
+        
         return Cadena;
     }
     
