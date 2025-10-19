@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c07529b-b161-4ab0-a09f-6cc003f907c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "40d80281-4954-4552-849e-b29160404832.executor": "Run",
+    "40d80281-4954-4552-849e-b29160404832.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -73,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760831151239</updated>
-      <workItem from="1760831152793" duration="7373000" />
+      <workItem from="1760831152793" duration="7750000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -243,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760838291574</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="🔵Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true">
+      <option name="closed" value="true" />
+      <created>1760838784591</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760838784591</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +280,7 @@
     <MESSAGE value="Si_ingreso_una_palabra_palindroma_que_contenga_algunSimbolo_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
+    <MESSAGE value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
   </component>
   <component name="XDebuggerManager">
@@ -289,6 +298,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs</url>
+          <line>8</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Palindromos\Palindromo.cs" containingFunctionPresentation="Method 'ValidarSiEsLaPalabraEsPalindromo'">
+            <startOffsets>
+              <option value="187" />
+            </startOffsets>
+            <endOffsets>
+              <option value="210" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

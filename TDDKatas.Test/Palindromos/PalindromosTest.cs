@@ -70,5 +70,18 @@ public class PalindromosTest
         esPalindromo.Should().Be(true);
         
     }
-    
+
+
+    [Fact]
+    public void Si_ingresa_solo_simbolos_debe_retornar_false()
+    {
+        //arrange
+        var _palindromo =  new Palindromo("!!!!!");
+        
+        //act
+        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        
+        //assert
+        esPalindromo.Should().Be(false);
+    }
 }
