@@ -67,6 +67,7 @@ public class CalculadoraTest
         numero = ConvertirAMinusculas(numero);
         if (EsVacioNulo(numero) || ContieneLetras(numero)) return MENSAJE_ERROR;
         if(ContieneCaracteresNoPermitidos(numero)) return MENSAJE_ERROR;
+        if( numero== "+" || numero == "-" || numero == "*" || numero == "/") return MENSAJE_ERROR;
 
         return numero;
     }
