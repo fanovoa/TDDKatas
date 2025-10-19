@@ -28,11 +28,12 @@ public class Calculadora(string cadena)
         {
             //Estructura regex
             //^ → inicio de la cadena
+            // -? -> puede contener el signo negativo al inicio
             //\d+ → uno o más dígitos (número inicial)
             //([+\-*/]\d+)? → grupo opcional que puede tener:
             //? → indica que ese grupo puede estar o no presente
             //$ → fin de la cadena
-            return Regex.IsMatch(Cadena, @"^\d+([+\-*/]\d+)?$");
+            return Regex.IsMatch(Cadena, @"^-?\d+([+\-*/]\d+)?$");
         }
     
     private bool SoloContieneOperadores()

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_Ingreso_menos_dos_DEBE_retorar_menos_dos">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +226,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="7420000" />
+      <workItem from="1760883700664" duration="8435000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -358,7 +356,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760910446899</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="🔵Si_no_es_una_combinacion_valida_de_operadores_DEBE_Retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760912497023</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1760912497023</updated>
+    </task>
+    <task id="LOCAL-00037" summary="🔴Si_Ingreso_menos_dos_DEBE_retorar_menos_dos">
+      <option name="closed" value="true" />
+      <created>1760912606350</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1760912606350</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,8 +381,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_CadenaACalcular_Contiene_Letras_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Cadena_Contiene_Simbolo_Admiracion_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Cadena_Contiene_Simbolo_Admiracion_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Cadena_Contiene_Simbolo_Pregunta_DEBE_Retornar_IngreseNumeroValido" />
@@ -392,6 +404,8 @@
     <MESSAGE value="Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_no_es_una_combinacion_valida_de_operadores_DEBE_Retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingreso_menos_dos_DEBE_retorar_menos_dos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_Ingreso_menos_dos_DEBE_retorar_menos_dos" />
   </component>
 </project>
