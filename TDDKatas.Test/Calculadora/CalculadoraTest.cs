@@ -33,6 +33,12 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
+    [Fact]
+    public void Si_Cadena_Contiene_Simbolo_Admiracion_DEBE_Retornar_IngreseNumeroValido()
+    {
+        var resultado = ValidarCadena("!");
+        resultado.Should().Be("Ingrese un número válido.");
+    }
 
     private string ValidarCadena(string? numero)
     {
