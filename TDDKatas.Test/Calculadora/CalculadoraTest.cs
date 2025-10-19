@@ -12,6 +12,14 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
+    [Fact]
+    public void Si_Ingreso_la_letra_a_DEBE_Retornar_IngreseNumeroValido()
+    {
+        var numero = "a";
+        var resultado = ValidarCadena(numero);
+        resultado.Should().Be("Ingrese un número válido.");
+    }
+
     private string ValidarCadena(string numero)
     {
         if (numero == "") return "Ingrese un número válido.";
