@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado">
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="10108000" />
+      <workItem from="1760883700664" duration="10272000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -460,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760915399704</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="🔴Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado">
+      <option name="closed" value="true" />
+      <created>1760915739796</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1760915739796</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,5 +504,24 @@
     <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Calculadora\Calculadora.cs" containingFunctionPresentation="Method 'ValidarCadena'">
+            <startOffsets>
+              <option value="956" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1004" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
