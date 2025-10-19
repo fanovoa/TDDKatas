@@ -59,12 +59,12 @@ public class CalculadoraTest
         
         numero = ConvertirAMinusculas(numero);
         if (EsVacioNulo(numero) || ContieneLetras(numero)) return MENSAJE_ERROR;
-        if(ContieneSimbolosNoPermitidos(numero)) return MENSAJE_ERROR;
+        if(ContieneCaracteresNoPermitidos(numero)) return MENSAJE_ERROR;
 
         return numero;
     }
 
-    private bool ContieneSimbolosNoPermitidos(string numero)
+    private bool ContieneCaracteresNoPermitidos(string numero)
     {
         string[] operadores = {"+","-","*","/"};
         return numero.Any(caracter => !char.IsDigit(caracter) && !operadores.Contains(caracter.ToString()));
