@@ -98,5 +98,14 @@ public class CalculadoraTest
         resultado.Should().Be("21");
     }
     
+    
+    [Fact]
+    public void  Si_ingreso_11_mas_10_DEBE_Retornar_21()
+    {
+        var calculadora = new Calculadora("11+10");
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("21");
+    }
+    
 }
 
