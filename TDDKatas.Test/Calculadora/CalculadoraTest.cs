@@ -89,6 +89,14 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
     }
+
+    [Fact]
+    public void Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido()
+    {
+        var calculadora = new Calculadora("-*+/");
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("Ingrese un número válido.");
+    }
     
 }
 
