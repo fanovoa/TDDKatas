@@ -38,8 +38,8 @@ public class PalindromosTest
     
     private bool ValidarSiEsLaPalabraEsPalindromo(string palabra)
     {
-        if (palabra.Contains("!") || palabra.Contains(","))
-            palabra = palabra.Replace("!", "").Replace(",", "");
+        if (palabra.Contains("!") || palabra.Contains(",") || palabra.Contains("*"))
+            palabra = palabra.Replace("!", "").Replace(",", "").Replace("*","");
         var palabraAlReves = palabra.ToCharArray().Reverse();
         return palabra == new string(palabraAlReves.ToArray());
     }
