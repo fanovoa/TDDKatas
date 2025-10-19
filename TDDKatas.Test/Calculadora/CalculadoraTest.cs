@@ -7,51 +7,49 @@ public class CalculadoraTest
     [Fact]
     public void Si_Ingreso_Vacio_DEBE_Retornar_IngreseNumeroValido()
     {
-        var numero = "";
-        var resultado = ValidarCadena(numero);
+        var cadena = "";
+        var resultado = ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
 
-    [Fact]
-    public void Si_Ingreso_la_letra_a_DEBE_Retornar_IngreseNumeroValido()
+    [Theory]
+    [InlineData("")]
+    [InlineData(null)]
+    public void Si_Ingreso_Vacio_Nulo_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var numero = "a";
-        var resultado = ValidarCadena(numero);
+        var resultado = ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
-
-    [Fact]
-    public void Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido()
-    {
-        var numero = "abc";
-        var resultado = ValidarCadena(numero);
-        resultado.Should().Be("Ingrese un número válido.");
-    }
-
-    [Fact]
-    public void Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido()
-    {
-        var numero = "áéíóú";
-        var resultado = ValidarCadena(numero);
-        resultado.Should().Be("Ingrese un número válido.");
     
-    }
-
-    [Fact]
-    public void Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido()
+    [Theory]
+    [InlineData("a")]
+    [InlineData("abc")]
+    [InlineData("áéíóú")]
+    [InlineData("ÁÉÍÓÚ")]
+    [InlineData("camión")]
+    public void Si_CadenaACalcular_Contiene_Letras_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var numero = "  ÁÉÍÓÚ";
-        var resultado = ValidarCadena(numero);
+        var resultado = ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
 
-    private string ValidarCadena(string numero)
+
+    private string ValidarCadena(string? numero)
     {
-        numero = numero.ToLower();
-        if (numero == "" || numero=="a" || numero.Contains("abc")) return "Ingrese un número válido.";
-        if (numero.Contains("á") || numero.Contains('é') || numero.Contains('í') || numero.Contains('ó') ||
-            numero.Contains('ú')) return "Ingrese un número válido.";
+      
         
+        const string MENSAJE_ERROR = "Ingrese un número válido.";
+        if (numero == null) return MENSAJE_ERROR;
+        
+        numero = ConvertirAMinusculas(numero);
+        if (EsVacioNulo(numero) || ContieneLetras(numero)) return MENSAJE_ERROR;
+
         return "número válido";
     }
+
+    private  string ConvertirAMinusculas(string numero) => numero.ToLower();
+
+    private bool ContieneLetras(string numero) => numero.Any(char.IsLetter);
+
+    private bool EsVacioNulo(string numero) => string.IsNullOrEmpty(numero);
 }
