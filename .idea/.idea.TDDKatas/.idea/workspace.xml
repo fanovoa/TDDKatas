@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_Ingresa_los_operadores_seguidos_asterisco_suma_resta_division_DEBE_retornar_IngreseNumeroValido">
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +228,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="5158000" />
+      <workItem from="1760883700664" duration="7420000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -324,7 +326,39 @@
       <option name="project" value="LOCAL" />
       <updated>1760909820007</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="🔴Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760910289564</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1760910289564</updated>
+    </task>
+    <task id="LOCAL-00033" summary="🟢Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760910337376</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1760910337376</updated>
+    </task>
+    <task id="LOCAL-00034" summary="🔴Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760910421717</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1760910421717</updated>
+    </task>
+    <task id="LOCAL-00035" summary="🟢Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760910446899</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1760910446899</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,10 +367,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_CadenaACalcular_Contiene_Letras_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Cadena_Contiene_Simbolo_Admiracion_DEBE_Retornar_IngreseNumeroValido" />
@@ -358,6 +388,10 @@
     <MESSAGE value="Si_Ingresa_varias_veces_el_mismo_operador_seguido_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_los_operadores_seguidos_asterisco_suma_resta_division_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_los_operadores_seguidos_asterisco_suma_resta_division_DEBE_retornar_IngreseNumeroValido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_Ingresa_los_operadores_seguidos_asterisco_suma_resta_division_DEBE_retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
   </component>
 </project>

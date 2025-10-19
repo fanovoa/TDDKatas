@@ -46,17 +46,6 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
     }
-
-    [Theory]
-    [InlineData("+++")]
-    [InlineData("///")]
-    [InlineData("---")]
-    public void Si_Ingresa_varias_veces_el_mismo_operador_seguido_DEBE_Retornar_IngreseNumeroValido(string cadena)
-    {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("Ingrese un número válido.");
-    }
     
     [Fact]
     public void Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero()
@@ -74,29 +63,22 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
-    [Fact]
-    public void Si_Ingresa_los_operadores_seguidos_asterisco_suma_resta_division_DEBE_retornar_IngreseNumeroValido()
+    [Theory]
+    [InlineData("+++")]
+    [InlineData("///")]
+    [InlineData("---")]
+    [InlineData("*+-/")]
+    [InlineData("+*-/")]
+    [InlineData("-*+/")]
+    [InlineData("-----")]
+    public void Si_no_es_una_combinacion_valida_de_operadores_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var calculadora = new Calculadora("*+-/");
+        var calculadora = new Calculadora(cadena);
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
-    }
 
-    [Fact]
-    public void Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido()
-    {
-        var calculadora = new Calculadora("+*-/");
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("Ingrese un número válido.");
     }
-
-    [Fact]
-    public void Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido()
-    {
-        var calculadora = new Calculadora("-*+/");
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("Ingrese un número válido.");
-    }
+    
     
 }
 
