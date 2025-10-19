@@ -6,6 +6,7 @@ public class Palindromo(string palabra)
 
     public bool ValidarSiEsLaPalabraEsPalindromo()
     {
+        Palabra = Palabra.ToLower();
         if (ContieneSimbolos()) ReemplazaSimbolos();
         if (ContieneAcentos())
         {

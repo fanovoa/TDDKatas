@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c07529b-b161-4ab0-a09f-6cc003f907c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760831151239</updated>
-      <workItem from="1760831152793" duration="6729000" />
+      <workItem from="1760831152793" duration="7062000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -226,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760837854684</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="🔴Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true">
+      <option name="closed" value="true" />
+      <created>1760838234185</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760838234187</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +261,8 @@
     <MESSAGE value="Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_una_palabra_palindroma_que_contenga_algunSimbolo_debe_retornar_true" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_una_palabra_palindroma_que_contenga_algunSimbolo_debe_retornar_true" />
+    <MESSAGE value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
