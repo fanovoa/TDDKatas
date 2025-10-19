@@ -47,6 +47,7 @@ public class CalculadoraTest
 
     private string ValidarCadena(string numero)
     {
+        numero = numero.ToLower();
         if (numero == "" || numero=="a" || numero.Contains("abc")) return "Ingrese un número válido.";
         if (numero.Contains("á") || numero.Contains('é') || numero.Contains('í') || numero.Contains('ó') ||
             numero.Contains('ú')) return "Ingrese un número válido.";
