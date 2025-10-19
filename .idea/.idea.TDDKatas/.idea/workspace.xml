@@ -71,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760831151239</updated>
-      <workItem from="1760831152793" duration="1720000" />
+      <workItem from="1760831152793" duration="2024000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -145,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760832590169</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="🔴Si_ingreso_una_palabra_conSignoAdmiracion_debe_retornar_true">
+      <option name="closed" value="true" />
+      <created>1760832895484</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760832895484</updated>
+    </task>
+    <task id="LOCAL-00011" summary="🟢Si_ingreso_una_palabra_conSignoAdmiracion_debe_retornar_true">
+      <option name="closed" value="true" />
+      <created>1760832965256</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760832965256</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +179,9 @@
     <MESSAGE value="Si_Ingreso_La_Palabra_radar_debe_retornar_tru" />
     <MESSAGE value="Si_Ingreso_La_Palabra_radar_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_una_palabra_palindromo_en_minuscula_debe_retornar_true" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_una_palabra_palindromo_en_minuscula_debe_retornar_true" />
+    <MESSAGE value="Si_ingreso_una_palabra_conSignoAdmiracion_debe_retornar_true" />
+    <MESSAGE value="Si_ingreso_una_palabra_conSignoAdmiracion_debe_retornar_true" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_una_palabra_conSignoAdmiracion_debe_retornar_true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
