@@ -58,6 +58,7 @@ public class PalindromosTest
     [InlineData("El bar es imán o zona miserable.")]
     [InlineData("Isaac no ronca así")]
     [InlineData("Allí, tieta Mercè, faci cafè, crema, te i til·la")]
+    [InlineData("SÉ verlas al revÉs.")]
     public void Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true(string texto)
     {
         //arrange
@@ -70,8 +71,7 @@ public class PalindromosTest
         esPalindromo.Should().Be(true);
         
     }
-
-
+    
     [Theory]
     [InlineData("!!!!!!!")]
     [InlineData("??//>>,,,")]
@@ -89,7 +89,6 @@ public class PalindromosTest
     }
     
     
-
     [Fact]
     public void Si_ingresa_null_debe_retornar_false()
     {

@@ -29,10 +29,15 @@ public class Palindromo(string texto)
             .Replace("é","e")
             .Replace("í","i")
             .Replace("ó","o")
-            .Replace("ú","u");
+            .Replace("ú","u")
+            .Replace("Á","A")
+            .Replace("É","E")
+            .Replace("Í","I")
+            .Replace("Ó","O")
+            .Replace("Ú","U");
     }
 
-    private bool ContieneAcentos() =>  Texto.IndexOfAny("áéíóú".ToCharArray())>=0;
+    private bool ContieneAcentos() =>  Texto.IndexOfAny("áéíóúÁÉÍÓÚ".ToCharArray())>=0;
 
     private void ReemplazaSimbolos()
     {

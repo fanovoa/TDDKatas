@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2c07529b-b161-4ab0-a09f-6cc003f907c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760831151239</updated>
-      <workItem from="1760831152793" duration="9868000" />
+      <workItem from="1760831152793" duration="10189000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -293,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760840796049</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="🔵Si_ingresa_null_debe_retornar_false">
+      <option name="closed" value="true" />
+      <created>1760841234594</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1760841234594</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +312,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="init" />
     <MESSAGE value="Si_Ingreso_La_Palabra_oro_debe_retornar_true" />
     <MESSAGE value="Si_Ingreso_La_Palabra_oro_debe_retornar_true" />
     <MESSAGE value="Si_Ingreso_La_Palabra_ana_debe_retornar_true" />
@@ -326,6 +334,7 @@
     <MESSAGE value="Si_ingresa_solo_simbolos_debe_retornar_false" />
     <MESSAGE value="Si_ingresa_solo_simbolos_debe_retornar_false" />
     <MESSAGE value="Si_ingresa_solo_simbolos_debe_retornar_false" />
+    <MESSAGE value="Si_ingresa_null_debe_retornar_false" />
     <MESSAGE value="Si_ingresa_null_debe_retornar_false" />
     <MESSAGE value="Si_ingresa_null_debe_retornar_false" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_ingresa_null_debe_retornar_false" />
