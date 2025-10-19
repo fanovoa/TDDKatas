@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔵Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760849318784</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="🔵Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760850126909</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760850126909</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -201,6 +208,7 @@
     <MESSAGE value="Si_Cadena_Contiene_Simbolo_Pregunta_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido" />
   </component>
 </project>

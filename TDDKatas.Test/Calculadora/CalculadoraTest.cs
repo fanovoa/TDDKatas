@@ -43,6 +43,13 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
+    [Fact]
+    public void Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero()
+    {
+        var resultado = ValidarCadena("2");
+        resultado.Should().Be("2");
+    }
+
     private string ValidarCadena(string? numero)
     {
       
