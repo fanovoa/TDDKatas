@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_es_una_resta_DEBE_retornar_su_resultado">
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔵Si_es_una_resta_DEBE_retornar_su_resultado">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +61,6 @@
   }
 }]]></component>
   <component name="TaskManager">
-    <task id="LOCAL-00002" summary="🟢Si_Ingreso_Vacio_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760846995835</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1760846995835</updated>
-    </task>
-    <task id="LOCAL-00003" summary="🔴Si_Ingreso_la_letra_a_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760847128478</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1760847128478</updated>
-    </task>
     <task id="LOCAL-00004" summary="🟢Si_Ingreso_la_letra_a_DEBE_Retornar_IngreseNumeroValido">
       <option name="closed" value="true" />
       <created>1760847193759</created>
@@ -210,7 +195,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="10573000" />
+      <workItem from="1760883700664" duration="10960000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -460,7 +445,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760916178881</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="🟢Si_es_una_resta_DEBE_retornar_su_resultado">
+      <option name="closed" value="true" />
+      <created>1760916209417</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1760916209417</updated>
+    </task>
+    <task id="LOCAL-00052" summary="🔵Si_es_una_resta_DEBE_retornar_su_resultado">
+      <option name="closed" value="true" />
+      <created>1760916379832</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1760916379832</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,8 +470,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_Ingresa_varias_veces_seguidas_el_mismo_operador_DEBE_retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Ingresa_varias_veces_seguidas_el_mismo_operador_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_varias_veces_seguidas_el_operador_division_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_varias_veces_seguidas_el_operador_division_DEBE_retornar_IngreseNumeroValid" />
     <MESSAGE value="Si_Ingresa_varias_veces_el_mismo_operador_seguido_DEBE_Retornar_IngreseNumeroValido" />
@@ -493,6 +492,8 @@
     <MESSAGE value="Si_es_una_suma_DEBE_returnar_su_resultado" />
     <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
+    <MESSAGE value="Si_es_una_resta_DEBE_retornar_su_resultado" />
+    <MESSAGE value="Si_es_una_resta_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_resta_DEBE_retornar_su_resultado" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_es_una_resta_DEBE_retornar_su_resultado" />
   </component>

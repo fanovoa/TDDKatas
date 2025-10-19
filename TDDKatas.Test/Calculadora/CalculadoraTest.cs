@@ -114,5 +114,18 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be(esperado);
     }
+
+    [Theory]
+    [InlineData("2*2", "4")]
+
+    public void Si_es_una_multiplicacion_DEBE_retornar_su_resultado(string cadena, string esperado)
+    {
+        var calculadora = new Calculadora(cadena);
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be(esperado);
+    }
+    
+        
+    
 }
 

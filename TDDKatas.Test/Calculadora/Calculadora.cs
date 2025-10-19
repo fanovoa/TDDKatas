@@ -49,7 +49,6 @@ public class Calculadora(string cadena)
     private bool EsUnaSuma() =>  Cadena.Contains("+");
     private bool EsUnaResta() => Cadena.Contains("-");
     
-
     private bool EsUnaCombinacionValidaOperador()
     
         {
