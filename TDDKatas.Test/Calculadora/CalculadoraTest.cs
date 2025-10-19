@@ -32,25 +32,14 @@ public class CalculadoraTest
         var resultado = ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
-
-    [Fact]
-    public void Si_Cadena_Contiene_Simbolo_Admiracion_DEBE_Retornar_IngreseNumeroValido()
+    
+    [Theory]
+    [InlineData("!")]
+    [InlineData("@")]
+    [InlineData("??")]
+    public void Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var resultado = ValidarCadena("!");
-        resultado.Should().Be("Ingrese un número válido.");
-    }
-
-    [Fact]
-    public void Si_Cadena_Contiene_Simbolo_Pregunta_DEBE_Retornar_IngreseNumeroValido()
-    {
-        var resultado = ValidarCadena("??");
-        resultado.Should().Be("Ingrese un número válido.");
-    }
-
-    [Fact]
-    public void Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido()
-    {
-        var resultado = ValidarCadena("@");
+        var resultado = ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
 
@@ -63,9 +52,15 @@ public class CalculadoraTest
         
         numero = ConvertirAMinusculas(numero);
         if (EsVacioNulo(numero) || ContieneLetras(numero)) return MENSAJE_ERROR;
-        if(numero.Contains("!") || numero.Contains("??") || numero.Contains("@")) return MENSAJE_ERROR;
+        if(ContieneSimbolosNoPermitidos(numero)) return MENSAJE_ERROR;
 
         return "número válido";
+    }
+
+    private bool ContieneSimbolosNoPermitidos(string numero)
+    {
+        string[] operadores = {"+","-","*","/"};
+        return  operadores.Any( operador => !numero.Contains(operador));
     }
 
     private  string ConvertirAMinusculas(string numero) => numero.ToLower();
@@ -74,3 +69,4 @@ public class CalculadoraTest
 
     private bool EsVacioNulo(string numero) => string.IsNullOrEmpty(numero);
 }
+
