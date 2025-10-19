@@ -20,6 +20,15 @@ public class PalindromosTest
         esPalindromo.Should().Be(true);
     }
 
+    [Fact]
+    public void Si_Ingreso_La_Palabra_radar_debe_retornar_true()
+    {
+        var palabra = "radar";
+        var esPalindromo = ValidarSiEsLaPalabraEsPalindromo(palabra);
+        esPalindromo.Should().Be(true);
+        
+    }
+
     private object ValidarSiEsLaPalabraEsPalindromo(string palabra)
     {
         return palabra == "oro" || palabra == "ana";
