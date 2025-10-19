@@ -6,6 +6,7 @@ public class Palindromo(string texto)
 
     public bool ValidarSiEsLaPalabraEsPalindromo()
     {
+        if (string.IsNullOrEmpty(Texto)) return false;
         ConvertirAMinusculas();
         if (ContieneSimbolos()) ReemplazaSimbolos();
         if (ContieneAcentos()) ReemplazaAcentos();
