@@ -25,7 +25,8 @@ public class Calculadora(string cadena)
     {
         QuitaOperadoresDuplicados();
         
-        return Cadena== "+" || Cadena == "-" || Cadena == "*" || Cadena == "/" || Cadena=="*+-/";
+        return Cadena== "+" || Cadena == "-" || Cadena == "*" || Cadena == "/" || Cadena=="*+-/"
+            || Cadena=="+*-/";
     }
     
     private bool ContieneCaracteresNoPermitidos()
