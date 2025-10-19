@@ -127,8 +127,13 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be(esperado);
     }
-    
-        
-    
+
+    [Fact]
+    public void Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado()
+    {
+        var calculadora = new Calculadora("2/2");
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("1");
+    } 
 }
 
