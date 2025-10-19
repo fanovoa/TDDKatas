@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2c07529b-b161-4ab0-a09f-6cc003f907c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,9 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="SKIP_HIGHLIGHTING" />
@@ -73,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760831151239</updated>
-      <workItem from="1760831152793" duration="7750000" />
+      <workItem from="1760831152793" duration="8206000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -251,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760838784591</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="🔴Si_ingresa_solo_simbolos_debe_retornar_false">
+      <option name="closed" value="true" />
+      <created>1760839167107</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760839167107</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +292,8 @@
     <MESSAGE value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true" />
+    <MESSAGE value="Si_ingresa_solo_simbolos_debe_retornar_false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_ingresa_solo_simbolos_debe_retornar_false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -300,16 +312,29 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs</url>
-          <line>8</line>
+          <line>11</line>
           <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Palindromos\Palindromo.cs" containingFunctionPresentation="Method 'ValidarSiEsLaPalabraEsPalindromo'">
             <startOffsets>
-              <option value="187" />
+              <option value="323" />
             </startOffsets>
             <endOffsets>
-              <option value="210" />
+              <option value="355" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Palindromos\Palindromo.cs" containingFunctionPresentation="Method 'ReemplazaSimbolos'">
+            <startOffsets>
+              <option value="887" />
+            </startOffsets>
+            <endOffsets>
+              <option value="978" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

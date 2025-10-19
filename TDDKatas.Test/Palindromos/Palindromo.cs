@@ -9,6 +9,7 @@ public class Palindromo(string texto)
         ConvertirAMinusculas();
         if (ContieneSimbolos()) ReemplazaSimbolos();
         if (ContieneAcentos()) ReemplazaAcentos();
+        if(Texto == "" || Texto == null) return false;
         
         var palabraAlReves = Texto.ToCharArray().Reverse();
         return Texto == new string(palabraAlReves.ToArray());
@@ -33,5 +34,5 @@ public class Palindromo(string texto)
             .ToArray();
         Texto = new string(quitarSimbolos);
     }
-    private bool ContieneSimbolos() => Texto.Any(caracter => char.IsLetterOrDigit(caracter));
+    private bool ContieneSimbolos() => Texto.Any(caracter => !char.IsLetterOrDigit(caracter));
 }
