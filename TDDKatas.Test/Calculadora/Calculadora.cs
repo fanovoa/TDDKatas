@@ -14,7 +14,7 @@ public class Calculadora(string cadena)
         ConvertirAMinusculas();
         if (EsVacioNulo() || ContieneLetras()) return MENSAJE_ERROR;
         if(ContieneCaracteresNoPermitidos()) return MENSAJE_ERROR;
-        if( Cadena== "+" || Cadena == "-" || Cadena == "*" || Cadena == "/"|| Cadena== "+++") return MENSAJE_ERROR;
+        if( Cadena== "+" || Cadena == "-" || Cadena == "*" || Cadena == "/"|| Cadena== "+++" || Cadena== "////") return MENSAJE_ERROR;
 
         return Cadena;
     }
