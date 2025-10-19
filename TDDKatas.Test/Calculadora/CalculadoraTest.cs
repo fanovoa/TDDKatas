@@ -74,6 +74,15 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
+    [Fact]
+    public void Si_Ingresa_los_operadores_seguidos_asterisco_suma_resta_division_DEBE_retornar_IngreseNumeroValido()
+    {
+        var calculadora = new Calculadora("*+-/");
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("Ingrese un número válido.");
+    }
+    
+
 
 
 }
