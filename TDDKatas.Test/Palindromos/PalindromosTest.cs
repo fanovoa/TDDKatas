@@ -1,6 +1,4 @@
 ﻿using FluentAssertions;
-using Xunit.Sdk;
-
 namespace TDDKatas.Palindromos;
 
 public class PalindromosTest
@@ -11,7 +9,13 @@ public class PalindromosTest
     [InlineData("radar")]
     public void Si_ingreso_una_palabra_palindromo_en_minuscula_debe_retornar_true(string palabra)
     {
-        var esPalindromo = ValidarSiEsLaPalabraEsPalindromo(palabra);
+        //arrange
+        var _palindromo =  new Palindromo(palabra);
+        
+        //act
+        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        
+        //assert
         esPalindromo.Should().Be(true);
     }
     
@@ -22,40 +26,30 @@ public class PalindromosTest
     [InlineData("*a!?na")]
     public void Si_ingreso_una_palabra_palindroma_que_contenga_algunSimbolo_debe_retornar_true(string palabra)
     {
-       var esPalindromo =ValidarSiEsLaPalabraEsPalindromo(palabra);
-        esPalindromo.Should().Be(true);
-    }
-
-    [Fact]
-    public void Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true()
-    {
-        var esPalindromo =ValidarSiEsLaPalabraEsPalindromo("ána");
-        esPalindromo.Should().Be(true);
-    }
-    
-    private bool ValidarSiEsLaPalabraEsPalindromo(string palabra)
-    {
-        if (ContieneSimbolos(palabra))
-            palabra = RemplazaSimbolos(palabra);
-
-        if (palabra.Contains("á"))
-            palabra = palabra.Replace("á", "a");
+        //arrange
+        var _palindromo =  new Palindromo(palabra);
         
-        var palabraAlReves = palabra.ToCharArray().Reverse();
-        return palabra == new string(palabraAlReves.ToArray());
+        //act
+        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        
+        //assert
+        esPalindromo.Should().Be(true);
     }
 
-    private static string RemplazaSimbolos(string palabra)
-    {
-        var quitarSimbolos = palabra
-            .Where(char.IsLetterOrDigit)
-            .ToArray();
-        return  new string(quitarSimbolos);
-    }
 
-    private static bool ContieneSimbolos(string palabra)
+    [Theory]
+    [InlineData("ána")]
+    [InlineData("rádar")]
+    [InlineData("rotór")]
+    public void Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true(string palabra)
     {
-        return palabra.Any(caracter => char.IsLetterOrDigit(caracter));
-       
+        //arrange
+        var _palindromo =  new Palindromo(palabra);
+        
+        //act
+        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        
+        //assert
+        esPalindromo.Should().Be(true);
     }
 }

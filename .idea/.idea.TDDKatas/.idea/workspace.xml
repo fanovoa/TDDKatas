@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c07529b-b161-4ab0-a09f-6cc003f907c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" afterDir="false" />
     </list>
@@ -51,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "40d80281-4954-4552-849e-b29160404832.executor": "Run",
+    "40d80281-4954-4552-849e-b29160404832.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760831151239</updated>
-      <workItem from="1760831152793" duration="3918000" />
+      <workItem from="1760831152793" duration="6303000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -210,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760834655258</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="🟢Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true">
+      <option name="closed" value="true" />
+      <created>1760835329919</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760835329919</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +245,7 @@
     <MESSAGE value="Si_ingreso_una_palabra_conAsterisco_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_una_palabra_palindroma_que_contenga_algunSimbolo_debe_retornar_true" />
     <MESSAGE value="Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true" />
+    <MESSAGE value="Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true" />
   </component>
   <component name="XDebuggerManager">
@@ -253,6 +263,32 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs</url>
+          <line>8</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Palindromos\Palindromo.cs" containingFunctionPresentation="Method 'ValidarSiEsLaPalabraEsPalindromo'">
+            <startOffsets>
+              <option value="193" />
+            </startOffsets>
+            <endOffsets>
+              <option value="216" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Palindromos\Palindromo.cs" containingFunctionPresentation="Method 'ReemplazaAcentos'">
+            <startOffsets>
+              <option value="513" />
+            </startOffsets>
+            <endOffsets>
+              <option value="617" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
