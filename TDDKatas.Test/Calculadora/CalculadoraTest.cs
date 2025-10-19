@@ -4,11 +4,12 @@ namespace TDDKatas.Calculadora;
 
 public class CalculadoraTest
 {
+
     [Fact]
     public void Si_Ingreso_Vacio_DEBE_Retornar_IngreseNumeroValido()
     {
-        var cadena = "";
-        var resultado = ValidarCadena(cadena);
+        var calculadora = new Calculadora("");
+        var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
     }
 
@@ -17,7 +18,8 @@ public class CalculadoraTest
     [InlineData(null)]
     public void Si_Ingreso_Vacio_Nulo_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var resultado = ValidarCadena(cadena);
+        var calculadora = new Calculadora(cadena);
+        var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
     }
     
@@ -29,7 +31,8 @@ public class CalculadoraTest
     [InlineData("camión")]
     public void Si_CadenaACalcular_Contiene_Letras_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var resultado = ValidarCadena(cadena);
+        var calculadora = new Calculadora(cadena);
+        var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
     }
     
@@ -39,49 +42,25 @@ public class CalculadoraTest
     [InlineData("??")]
     public void Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var resultado = ValidarCadena(cadena);
+        var calculadora = new Calculadora(cadena);
+        var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
     }
 
     [Fact]
     public void Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero()
     {
-        var resultado = ValidarCadena("2");
+        var calculadora = new Calculadora("2");
+        var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("2");
     }
 
     [Fact]
     public void Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido()
     {
-        var resultado = ValidarCadena("+");
+        var calculadora = new Calculadora("+");
+        var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("Ingrese un número válido.");
     }
-
-    private string ValidarCadena(string? numero)
-    {
-      
-        
-        const string MENSAJE_ERROR = "Ingrese un número válido.";
-        if (numero == null) return MENSAJE_ERROR;
-        
-        numero = ConvertirAMinusculas(numero);
-        if (EsVacioNulo(numero) || ContieneLetras(numero)) return MENSAJE_ERROR;
-        if(ContieneCaracteresNoPermitidos(numero)) return MENSAJE_ERROR;
-        if( numero== "+" || numero == "-" || numero == "*" || numero == "/") return MENSAJE_ERROR;
-
-        return numero;
-    }
-
-    private bool ContieneCaracteresNoPermitidos(string numero)
-    {
-        string[] operadores = {"+","-","*","/"};
-        return numero.Any(caracter => !char.IsDigit(caracter) && !operadores.Contains(caracter.ToString()));
-    }
-
-    private  string ConvertirAMinusculas(string numero) => numero.ToLower();
-
-    private bool ContieneLetras(string numero) => numero.Any(char.IsLetter);
-
-    private bool EsVacioNulo(string numero) => string.IsNullOrEmpty(numero);
 }
 
