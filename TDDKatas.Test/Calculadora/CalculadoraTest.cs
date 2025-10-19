@@ -61,13 +61,13 @@ public class CalculadoraTest
         if (EsVacioNulo(numero) || ContieneLetras(numero)) return MENSAJE_ERROR;
         if(ContieneSimbolosNoPermitidos(numero)) return MENSAJE_ERROR;
 
-        return "número válido";
+        return numero;
     }
 
     private bool ContieneSimbolosNoPermitidos(string numero)
     {
         string[] operadores = {"+","-","*","/"};
-        return  operadores.Any( operador => !numero.Contains(operador));
+        return numero.Any(caracter => !char.IsDigit(caracter) && !operadores.Contains(caracter.ToString()));
     }
 
     private  string ConvertirAMinusculas(string numero) => numero.ToLower();
