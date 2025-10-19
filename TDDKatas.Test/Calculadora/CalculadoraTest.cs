@@ -89,6 +89,14 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be("8");
     }
+
+    [Fact]
+    public void  Si_ingreso_10_mas_11_DEBE_Retornar_21()
+    {
+        var calculadora = new Calculadora("10+11");
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("21");
+    }
     
 }
 
