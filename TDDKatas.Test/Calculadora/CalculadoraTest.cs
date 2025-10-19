@@ -48,14 +48,6 @@ public class CalculadoraTest
     }
     
     [Fact]
-    public void Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero()
-    {
-        var calculadora = new Calculadora("2");
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("2");
-    }
-
-    [Fact]
     public void Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido()
     {
         var calculadora = new Calculadora("+");
@@ -78,13 +70,16 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
 
     }
-
-    [Fact]
-    public void Si_Ingreso_menos_dos_DEBE_retorar_menos_dos()
+    
+    [Theory]
+    [InlineData("2","2")]
+    [InlineData("-2","-2")]
+    [InlineData("100","100")]
+    public void Si_Ingreso_solo_un_numero_DEBE_Retornar_El_MismoNumero(string cadena, string esperado)
     {
-        var calculadora = new Calculadora("-2");
+        var calculadora = new Calculadora(cadena);
         var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("-2");
+        resultado.Should().Be(esperado);
     }
     
 }
