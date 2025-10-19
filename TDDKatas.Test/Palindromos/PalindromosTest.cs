@@ -28,6 +28,13 @@ public class PalindromosTest
         var esPalindromo =ValidarSiEsLaPalabraEsPalindromo("an,a");
         esPalindromo.Should().Be(true);
     }
+
+    [Fact]
+    public void Si_ingreso_una_palabra_conAsterisco_debe_retornar_true()
+    {
+        var esPalindromo =ValidarSiEsLaPalabraEsPalindromo("*ana");
+        esPalindromo.Should().Be(true);
+    }
     
     private bool ValidarSiEsLaPalabraEsPalindromo(string palabra)
     {
