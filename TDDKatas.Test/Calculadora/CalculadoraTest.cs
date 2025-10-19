@@ -20,6 +20,14 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
+    [Fact]
+    public void Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido()
+    {
+        var numero = "abc";
+        var resultado = ValidarCadena(numero);
+        resultado.Should().Be("Ingrese un número válido.");
+    }
+
     private string ValidarCadena(string numero)
     {
         if (numero == "" || numero=="a") return "Ingrese un número válido.";
