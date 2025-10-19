@@ -47,6 +47,17 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
+    [Theory]
+    [InlineData("+++")]
+    [InlineData("///")]
+    [InlineData("---")]
+    public void Si_Ingresa_varias_veces_el_mismo_operador_seguido_DEBE_Retornar_IngreseNumeroValido(string cadena)
+    {
+        var calculadora = new Calculadora(cadena);
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("Ingrese un número válido.");
+    }
+    
     [Fact]
     public void Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero()
     {
@@ -63,21 +74,7 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
     }
 
-    [Fact]
-    public void Si_Ingresa_varias_veces_seguidas_el_mismo_operador_DEBE_retornar_IngreseNumeroValido()
-    {
-        var calculadora = new Calculadora("+++");
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("Ingrese un número válido.");
-    }
 
-    [Fact]
-    public void Si_Ingresa_varias_veces_seguidas_el_operador_division_DEBE_retornar_IngreseNumeroValido()
-    {
-        var calculadora = new Calculadora("////");
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("Ingrese un número válido.");
-    }
 
 }
 
