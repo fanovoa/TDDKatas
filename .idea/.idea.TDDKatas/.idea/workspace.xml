@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido">
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +81,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760847375988</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="🟢Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760847454371</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760847454371</updated>
+    </task>
+    <task id="LOCAL-00007" summary="🔴Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760847693125</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760847693125</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🟢Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido">
+      <option name="closed" value="true" />
+      <created>1760847732427</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760847732427</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -92,6 +116,9 @@
     <MESSAGE value="Si_Ingreso_la_letra_a_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingreso_la_letra_a_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingreso_contiene_tres_letras_DEBE_Retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido" />
+    <MESSAGE value="Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_Ingreso_contiene_letras_acentuadas_DEBE_Retornar_IngreseNumeroValido" />
   </component>
 </project>

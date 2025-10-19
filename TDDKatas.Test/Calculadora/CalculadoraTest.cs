@@ -37,6 +37,14 @@ public class CalculadoraTest
     
     }
 
+    [Fact]
+    public void Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido()
+    {
+        var numero = "  ÁÉÍÓÚ";
+        var resultado = ValidarCadena(numero);
+        resultado.Should().Be("Ingrese un número válido.");
+    }
+
     private string ValidarCadena(string numero)
     {
         if (numero == "" || numero=="a" || numero.Contains("abc")) return "Ingrese un número válido.";
