@@ -52,4 +52,18 @@ public class PalindromosTest
         //assert
         esPalindromo.Should().Be(true);
     }
+
+    [Fact]
+    public void Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true()
+    {
+        var _palindromo =  new Palindromo("Amar da drama");
+        
+        //act
+        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        
+        //assert
+        esPalindromo.Should().Be(true);
+        
+    }
+    
 }
