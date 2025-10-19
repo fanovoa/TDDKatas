@@ -56,7 +56,7 @@ public class CalculadoraTest
         
         numero = ConvertirAMinusculas(numero);
         if (EsVacioNulo(numero) || ContieneLetras(numero)) return MENSAJE_ERROR;
-        if(numero.Contains("!")) return MENSAJE_ERROR;
+        if(numero.Contains("!") || numero.Contains("??")) return MENSAJE_ERROR;
 
         return "número válido";
     }
