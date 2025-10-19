@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔵Si_Ingreso_solo_un_numero_DEBE_Retornar_El_MismoNumero">
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_ingreso_11_mas_10_DEBE_Retornar_21">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +226,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="8741000" />
+      <workItem from="1760883700664" duration="9121000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -389,7 +388,55 @@
       <option name="project" value="LOCAL" />
       <updated>1760914190551</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="🔴Si_ingreso_5_mas_3_DEBE_Retornar_8">
+      <option name="closed" value="true" />
+      <created>1760914365335</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1760914365335</updated>
+    </task>
+    <task id="LOCAL-00041" summary="🟢Si_ingreso_5_mas_3_DEBE_Retornar_8">
+      <option name="closed" value="true" />
+      <created>1760914387803</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1760914387803</updated>
+    </task>
+    <task id="LOCAL-00042" summary="🔴Si_ingreso_10_mas_11_DEBE_Retornar_21">
+      <option name="closed" value="true" />
+      <created>1760914438773</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1760914438773</updated>
+    </task>
+    <task id="LOCAL-00043" summary="🟢Si_ingreso_10_mas_11_DEBE_Retornar_21">
+      <option name="closed" value="true" />
+      <created>1760914462188</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1760914462188</updated>
+    </task>
+    <task id="LOCAL-00044" summary="🔴Si_ingreso_11_mas_10_DEBE_Retornar_21">
+      <option name="closed" value="true" />
+      <created>1760914492839</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1760914492839</updated>
+    </task>
+    <task id="LOCAL-00045" summary="🟢Si_ingreso_11_mas_10_DEBE_Retornar_21">
+      <option name="closed" value="true" />
+      <created>1760914512742</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1760914512742</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,12 +445,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_Cadena_Contiene_Simbolo_Pregunta_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Cadena_Contiene_Simbolo_Pregunta_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero" />
     <MESSAGE value="Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero" />
     <MESSAGE value="Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido" />
@@ -423,6 +464,12 @@
     <MESSAGE value="Si_Ingreso_menos_dos_DEBE_retorar_menos_dos" />
     <MESSAGE value="Si_Ingreso_menos_dos_DEBE_retorar_menos_dos" />
     <MESSAGE value="Si_Ingreso_solo_un_numero_DEBE_Retornar_El_MismoNumero" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_Ingreso_solo_un_numero_DEBE_Retornar_El_MismoNumero" />
+    <MESSAGE value="Si_ingreso_5_mas_3_DEBE_Retornar_8" />
+    <MESSAGE value="Si_ingreso_5_mas_3_DEBE_Retornar_8" />
+    <MESSAGE value="Si_ingreso_10_mas_11_DEBE_Retornar_21" />
+    <MESSAGE value="Si_ingreso_10_mas_11_DEBE_Retornar_21" />
+    <MESSAGE value="Si_ingreso_11_mas_10_DEBE_Retornar_21" />
+    <MESSAGE value="Si_ingreso_11_mas_10_DEBE_Retornar_21" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_ingreso_11_mas_10_DEBE_Retornar_21" />
   </component>
 </project>

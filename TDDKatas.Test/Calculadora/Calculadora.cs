@@ -21,12 +21,23 @@ public class Calculadora(string cadena)
         if( SoloContieneOperadores()) return MENSAJE_ERROR;
         if(!EsUnaCombinacionValidaOperador()) return MENSAJE_ERROR;
 
-        if (Cadena == "5+3") return "8";
-        if (Cadena == "10+11") return "21";
-        if (Cadena == "11+10") return "21";
+        if (esUnaSuma())  return HacerSuma();
+        
         return Cadena;
     }
+
+    private string HacerSuma()
+    {
+        var cadenaParticionada = Cadena.Split('+');
+        var sumando1 = int.Parse(cadenaParticionada[0]);
+        var sumando2 = int.Parse(cadenaParticionada[1]);
+        var resultado= sumando1+sumando2;
+        return resultado.ToString();
+    }
+
+    private bool esUnaSuma() =>  Cadena.Contains("+");
     
+
     private bool EsUnaCombinacionValidaOperador()
     
         {

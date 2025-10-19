@@ -82,29 +82,16 @@ public class CalculadoraTest
         resultado.Should().Be(esperado);
     }
 
-    [Fact]
-    public void Si_ingreso_5_mas_3_DEBE_Retornar_8()
+ 
+    [Theory]
+    [InlineData("5+3","8")]
+    [InlineData("10+11","21")]
+    [InlineData("11+10","21")]
+    public void Si_es_una_suma_DEBE_returnar_su_resultado(string cadena, string esperado)
     {
-        var calculadora = new Calculadora("5+3");
+        var calculadora = new Calculadora(cadena);
         var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("8");
-    }
-
-    [Fact]
-    public void  Si_ingreso_10_mas_11_DEBE_Retornar_21()
-    {
-        var calculadora = new Calculadora("10+11");
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("21");
-    }
-    
-    
-    [Fact]
-    public void  Si_ingreso_11_mas_10_DEBE_Retornar_21()
-    {
-        var calculadora = new Calculadora("11+10");
-        var resultado = calculadora.ValidarCadena();
-        resultado.Should().Be("21");
+        resultado.Should().Be(esperado);
     }
     
 }
