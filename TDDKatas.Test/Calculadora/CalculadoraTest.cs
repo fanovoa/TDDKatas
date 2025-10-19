@@ -50,6 +50,13 @@ public class CalculadoraTest
         resultado.Should().Be("2");
     }
 
+    [Fact]
+    public void Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido()
+    {
+        var resultado = ValidarCadena("+");
+        resultado.Should().Be("Ingrese un número válido.");
+    }
+
     private string ValidarCadena(string? numero)
     {
       
