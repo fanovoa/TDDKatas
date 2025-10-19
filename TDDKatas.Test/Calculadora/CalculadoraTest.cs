@@ -8,12 +8,13 @@ public class CalculadoraTest
     public void Si_Ingreso_Vacio_DEBE_Retornar_IngreseNumeroValido()
     {
         var numero = "";
-        var resultado = ValidarCadena();
+        var resultado = ValidarCadena(numero);
         resultado.Should().Be("Ingrese un número válido.");
     }
 
-    private object ValidarCadena()
+    private string ValidarCadena(string numero)
     {
-        throw new NotImplementedException();
+        if (numero == "") return "Ingrese un número válido.";
+        return "número válido";
     }
 }

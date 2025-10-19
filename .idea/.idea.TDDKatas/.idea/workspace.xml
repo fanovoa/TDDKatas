@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "CalculadoraString"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+</project>
