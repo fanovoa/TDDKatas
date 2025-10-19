@@ -25,35 +25,38 @@ public class Calculadora(string cadena)
 
         if (EsUnaSuma())  return HacerSuma();
         if (EsUnaResta()) return HacerResta();
-        if (Cadena.Contains("*"))
-        {
-            var cadenaParticionada = Cadena.Split('*');
-            var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
-            var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
-            var resultado= sumando1*sumando2;
-            return resultado.ToString();
-        }
+        if (EsUnaMultiplicacion()) return HacerMultiplicacion();
         
         return Cadena;
     }
 
+    private string HacerMultiplicacion()
+    {
+        var numerosOperar = ParticionarCadena("*");
+        var resultado= numerosOperar[0]*numerosOperar[1];
+        return resultado.ToString();
+    }
     private string HacerResta()
     {
-        var cadenaParticionada = Cadena.Split('-');
-        var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
-        var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
-        var resultado= sumando1-sumando2;
+        var numerosOperar = ParticionarCadena("-");
+        var resultado= numerosOperar[0]-numerosOperar[1];
         return resultado.ToString();
     }
     private string HacerSuma()
     {
-        var cadenaParticionada = Cadena.Split('+');
-        var sumando1 = int.Parse(cadenaParticionada[0]);
-        var sumando2 = int.Parse(cadenaParticionada[1]);
-        var resultado= sumando1+sumando2;
+        var numerosOperar = ParticionarCadena("+");
+        var resultado= numerosOperar[0]+numerosOperar[1];
         return resultado.ToString();
     }
-
+    private int[] ParticionarCadena(string operador)
+    {
+        var cadenaParticionada = Cadena.Split(operador);
+        var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
+        var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
+        return [sumando1,sumando2];
+    }
+    
+    private bool EsUnaMultiplicacion() => Cadena.Contains("*");
     private bool EsUnaSuma() =>  Cadena.Contains("+");
     private bool EsUnaResta() => Cadena.Contains("-");
     

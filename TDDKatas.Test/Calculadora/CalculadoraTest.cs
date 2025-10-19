@@ -117,7 +117,10 @@ public class CalculadoraTest
 
     [Theory]
     [InlineData("2*2", "4")]
-
+    [InlineData("10*10", "100")]
+    [InlineData("100*0", "0")]
+    [InlineData("5*5", "25")]
+    [InlineData("5 * 5 ", "25")]
     public void Si_es_una_multiplicacion_DEBE_retornar_su_resultado(string cadena, string esperado)
     {
         var calculadora = new Calculadora(cadena);
