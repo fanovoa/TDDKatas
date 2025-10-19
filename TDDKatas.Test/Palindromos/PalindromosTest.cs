@@ -37,6 +37,9 @@ public class PalindromosTest
     {
         if (ContieneSimbolos(palabra))
             palabra = RemplazaSimbolos(palabra);
+
+        if (palabra.Contains("á"))
+            palabra = palabra.Replace("á", "a");
         
         var palabraAlReves = palabra.ToCharArray().Reverse();
         return palabra == new string(palabraAlReves.ToArray());
