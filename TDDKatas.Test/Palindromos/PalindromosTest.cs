@@ -31,6 +31,6 @@ public class PalindromosTest
 
     private object ValidarSiEsLaPalabraEsPalindromo(string palabra)
     {
-        return palabra == "oro" || palabra == "ana";
+        return palabra == "oro" || palabra == "ana" || palabra == "radar";
     }
 }
