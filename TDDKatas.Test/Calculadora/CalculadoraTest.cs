@@ -87,6 +87,7 @@ public class CalculadoraTest
     [InlineData("5+3","8")]
     [InlineData("10+11","21")]
     [InlineData("11+10","21")]
+    [InlineData("-2+5","3")]
     public void Si_es_una_suma_DEBE_returnar_su_resultado(string cadena, string esperado)
     {
         var calculadora = new Calculadora(cadena);
@@ -102,6 +103,15 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be(esperado);
     }
-    
+
+    [Theory]
+    [InlineData("5-3", "2")]
+    [InlineData("2-3", "-1")]
+    public void Si_es_una_resta_DEBE_retornar_su_resultado(string cadena, string esperado)
+    {
+        var calculadora = new Calculadora(cadena);
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be(esperado);
+    }
 }
 
