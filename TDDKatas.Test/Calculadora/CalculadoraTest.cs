@@ -30,7 +30,7 @@ public class CalculadoraTest
 
     private string ValidarCadena(string numero)
     {
-        if (numero == "" || numero=="a") return "Ingrese un número válido.";
+        if (numero == "" || numero=="a" || numero.Contains("abc")) return "Ingrese un número válido.";
         return "número válido";
     }
 }
