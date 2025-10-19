@@ -1,35 +1,37 @@
 ﻿namespace TDDKatas.Palindromos;
 
-public class Palindromo(string palabra)
+public class Palindromo(string texto)
 {
-    private string Palabra { get; set; } = palabra;
+    private string Texto { get; set; } = texto;
 
     public bool ValidarSiEsLaPalabraEsPalindromo()
     {
-        Palabra = Palabra.ToLower();
+        ConvertirAMinusculas();
         if (ContieneSimbolos()) ReemplazaSimbolos();
-        if (ContieneAcentos())
-        {
-            ReemplazaAcentos();
-        }
+        if (ContieneAcentos()) ReemplazaAcentos();
         
-        var palabraAlReves = Palabra.ToCharArray().Reverse();
-        return Palabra == new string(palabraAlReves.ToArray());
+        var palabraAlReves = Texto.ToCharArray().Reverse();
+        return Texto == new string(palabraAlReves.ToArray());
+    }
+
+    private void ConvertirAMinusculas()
+    {
+        Texto = Texto.ToLower();
     }
 
     private void ReemplazaAcentos()
     {
-        Palabra = Palabra.Replace("á", "a").Replace("é","e").Replace("í","i").Replace("ó","o").Replace("ú","u");
+        Texto = Texto.Replace("á", "a").Replace("é","e").Replace("í","i").Replace("ó","o").Replace("ú","u");
     }
 
-    private bool ContieneAcentos() =>  Palabra.IndexOfAny("áéíóú".ToCharArray())>=0;
+    private bool ContieneAcentos() =>  Texto.IndexOfAny("áéíóú".ToCharArray())>=0;
 
     private void ReemplazaSimbolos()
     {
-        var quitarSimbolos = Palabra
+        var quitarSimbolos = Texto
             .Where(char.IsLetterOrDigit)
             .ToArray();
-        Palabra = new string(quitarSimbolos);
+        Texto = new string(quitarSimbolos);
     }
-    private bool ContieneSimbolos() => Palabra.Any(caracter => char.IsLetterOrDigit(caracter));
+    private bool ContieneSimbolos() => Texto.Any(caracter => char.IsLetterOrDigit(caracter));
 }

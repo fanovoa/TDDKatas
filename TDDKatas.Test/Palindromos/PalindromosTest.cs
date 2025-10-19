@@ -35,8 +35,7 @@ public class PalindromosTest
         //assert
         esPalindromo.Should().Be(true);
     }
-
-
+    
     [Theory]
     [InlineData("ána")]
     [InlineData("rádar")]
@@ -52,11 +51,17 @@ public class PalindromosTest
         //assert
         esPalindromo.Should().Be(true);
     }
-
-    [Fact]
-    public void Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true()
+    
+    [Theory]
+    [InlineData("Amar da drama")]
+    [InlineData("Ateo por Arabia, iba raro poeta.")]
+    [InlineData("El bar es imán o zona miserable.")]
+    [InlineData("Isaac no ronca así")]
+    [InlineData("Allí, tieta Mercè, faci cafè, crema, te i til·la")]
+    public void Si_ingreso_un_texto_palindromo_combinadoMayusculasMinusculas_con_espacios_debe_retornar_true(string texto)
     {
-        var _palindromo =  new Palindromo("Amar da drama");
+        //arrange
+        var _palindromo =  new Palindromo(texto);
         
         //act
         var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
