@@ -16,6 +16,8 @@ public class Calculadora(string cadena)
         
         ConvertirAMinusculas();
         QuitaOperadoresDuplicados();
+        Cadena = Cadena.Replace(" ","");
+        
         if (EsVacioNulo() || ContieneLetras()) return MENSAJE_ERROR;
         if(ContieneCaracteresNoPermitidos()) return MENSAJE_ERROR;
         if( SoloContieneOperadores()) return MENSAJE_ERROR;
