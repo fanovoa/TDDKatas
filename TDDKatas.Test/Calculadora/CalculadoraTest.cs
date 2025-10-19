@@ -93,6 +93,15 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena();
         resultado.Should().Be(esperado);
     }
+
+    [Theory]
+    [InlineData("5 + 3", "8")]
+    public void Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado(string cadena, string esperado)
+    {
+        var calculadora = new Calculadora(cadena);
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be(esperado);
+    }
     
 }
 
