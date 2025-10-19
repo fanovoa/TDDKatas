@@ -87,6 +87,8 @@ public class PalindromosTest
         //assert
         esPalindromo.Should().Be(false);
     }
+    
+    
 
     [Fact]
     public void Si_ingresa_null_debe_retornar_false()
@@ -100,4 +102,6 @@ public class PalindromosTest
         //assert
         esPalindromo.Should().Be(false);
     }
+    
+    
 }

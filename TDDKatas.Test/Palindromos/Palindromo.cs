@@ -6,17 +6,16 @@ public class Palindromo(string texto)
 
     public bool ValidarSiEsLaPalabraEsPalindromo()
     {
-        if (string.IsNullOrEmpty(Texto)) return false;
+        if (EsNuloElTexto()) return false;
         ConvertirAMinusculas();
         if (ContieneSimbolos()) ReemplazaSimbolos();
         if (ContieneAcentos()) ReemplazaAcentos();
-        if(EsVacioNulo()) return false;
-        
-        var palabraAlReves = Texto.ToCharArray().Reverse();
-        return Texto == new string(palabraAlReves.ToArray());
+        return !EstaVacioElTexto() && Texto.SequenceEqual(Texto.ToCharArray().Reverse());
     }
 
-    private bool EsVacioNulo() => string.IsNullOrEmpty(Texto);
+    private bool EsNuloElTexto() => Texto == null;
+
+    private bool EstaVacioElTexto() => Texto =="";
 
     private void ConvertirAMinusculas()
     {
@@ -25,7 +24,12 @@ public class Palindromo(string texto)
 
     private void ReemplazaAcentos()
     {
-        Texto = Texto.Replace("á", "a").Replace("é","e").Replace("í","i").Replace("ó","o").Replace("ú","u");
+        Texto = Texto
+            .Replace("á", "a")
+            .Replace("é","e")
+            .Replace("í","i")
+            .Replace("ó","o")
+            .Replace("ú","u");
     }
 
     private bool ContieneAcentos() =>  Texto.IndexOfAny("áéíóú".ToCharArray())>=0;
