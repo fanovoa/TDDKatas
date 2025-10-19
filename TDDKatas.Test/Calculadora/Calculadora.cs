@@ -23,18 +23,20 @@ public class Calculadora(string cadena)
         if( SoloContieneOperadores()) return MENSAJE_ERROR;
         if(!EsUnaCombinacionValidaOperador()) return MENSAJE_ERROR;
 
-        if (esUnaSuma())  return HacerSuma();
-        if (Cadena.Contains("-"))
-        {
-            var cadenaParticionada = Cadena.Split('-');
-            var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
-            var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
-            var resultado= sumando1-sumando2;
-            return resultado.ToString();
-        }
+        if (EsUnaSuma())  return HacerSuma();
+        if (EsUnaResta()) return HacerResta();
+        
         return Cadena;
     }
 
+    private string HacerResta()
+    {
+        var cadenaParticionada = Cadena.Split('-');
+        var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
+        var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
+        var resultado= sumando1-sumando2;
+        return resultado.ToString();
+    }
     private string HacerSuma()
     {
         var cadenaParticionada = Cadena.Split('+');
@@ -44,7 +46,8 @@ public class Calculadora(string cadena)
         return resultado.ToString();
     }
 
-    private bool esUnaSuma() =>  Cadena.Contains("+");
+    private bool EsUnaSuma() =>  Cadena.Contains("+");
+    private bool EsUnaResta() => Cadena.Contains("-");
     
 
     private bool EsUnaCombinacionValidaOperador()

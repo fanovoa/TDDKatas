@@ -107,6 +107,7 @@ public class CalculadoraTest
     [Theory]
     [InlineData("5-3", "2")]
     [InlineData("2-3", "-1")]
+    [InlineData("2 - 3", "-1")]
     public void Si_es_una_resta_DEBE_retornar_su_resultado(string cadena, string esperado)
     {
         var calculadora = new Calculadora(cadena);
