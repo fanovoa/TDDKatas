@@ -22,7 +22,7 @@ public class Calculadora(string cadena)
         if(!EsUnaCombinacionValidaOperador()) return MENSAJE_ERROR;
         return Cadena;
     }
-
+    
     private bool EsUnaCombinacionValidaOperador()
     
         {
@@ -35,7 +35,6 @@ public class Calculadora(string cadena)
             return Regex.IsMatch(Cadena, @"^\d+([+\-*/]\d+)?$");
         }
     
-
     private bool SoloContieneOperadores()
     {
         foreach (var operador in OPERADORES)
@@ -53,7 +52,6 @@ public class Calculadora(string cadena)
     {
         return Cadena.Any(caracter => !char.IsDigit(caracter) && !OPERADORES.Contains(caracter.ToString()));
     }
-
     private void QuitaOperadoresDuplicados() => Cadena= Regex.Replace(Cadena, @"([+\-*/])\1+", "$1");
     private  string ConvertirAMinusculas() => Cadena= Cadena.ToLower();
     private bool ContieneLetras() => Cadena.Any(char.IsLetter);

@@ -78,7 +78,14 @@ public class CalculadoraTest
         resultado.Should().Be("Ingrese un número válido.");
 
     }
-    
+
+    [Fact]
+    public void Si_Ingreso_menos_dos_DEBE_retorar_menos_dos()
+    {
+        var calculadora = new Calculadora("-2");
+        var resultado = calculadora.ValidarCadena();
+        resultado.Should().Be("-2");
+    }
     
 }
 
