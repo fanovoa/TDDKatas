@@ -24,7 +24,14 @@ public class Calculadora(string cadena)
         if(!EsUnaCombinacionValidaOperador()) return MENSAJE_ERROR;
 
         if (esUnaSuma())  return HacerSuma();
-        
+        if (Cadena.Contains("-"))
+        {
+            var cadenaParticionada = Cadena.Split('-');
+            var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
+            var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
+            var resultado= sumando1-sumando2;
+            return resultado.ToString();
+        }
         return Cadena;
     }
 
