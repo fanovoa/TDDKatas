@@ -25,6 +25,13 @@ public class PalindromosTest
        var esPalindromo =ValidarSiEsLaPalabraEsPalindromo(palabra);
         esPalindromo.Should().Be(true);
     }
+
+    [Fact]
+    public void Si_ingreso_una_palabra_palindroma_con_tilde_debe_retornar_true()
+    {
+        var esPalindromo =ValidarSiEsLaPalabraEsPalindromo("ána");
+        esPalindromo.Should().Be(true);
+    }
     
     private bool ValidarSiEsLaPalabraEsPalindromo(string palabra)
     {
