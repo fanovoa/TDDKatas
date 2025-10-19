@@ -9,11 +9,13 @@ public class Palindromo(string texto)
         ConvertirAMinusculas();
         if (ContieneSimbolos()) ReemplazaSimbolos();
         if (ContieneAcentos()) ReemplazaAcentos();
-        if(Texto == "" || Texto == null) return false;
+        if(EsVacioNulo()) return false;
         
         var palabraAlReves = Texto.ToCharArray().Reverse();
         return Texto == new string(palabraAlReves.ToArray());
     }
+
+    private bool EsVacioNulo() => string.IsNullOrEmpty(Texto);
 
     private void ConvertirAMinusculas()
     {

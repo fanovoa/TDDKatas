@@ -72,11 +72,14 @@ public class PalindromosTest
     }
 
 
-    [Fact]
-    public void Si_ingresa_solo_simbolos_debe_retornar_false()
+    [Theory]
+    [InlineData("!!!!!!!")]
+    [InlineData("??//>>,,,")]
+    [InlineData("@@@%*&-+")]
+    public void Si_ingresa_solo_simbolos_debe_retornar_false(string texto)
     {
         //arrange
-        var _palindromo =  new Palindromo("!!!!!");
+        var _palindromo =  new Palindromo(texto);
         
         //act
         var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
