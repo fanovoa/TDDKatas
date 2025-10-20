@@ -53,7 +53,7 @@ public class Calculadora
         var cantidadNegativos = expresion.Count(c => c == '-');
         if (cantidadNegativos % 2 == 0)
         {
-            expresion = (""+expresion.Substring(1)).Replace("-","+");
+            expresion = (string.Concat("", expresion.AsSpan(1))).Replace("-","+");
             return HacerSuma(expresion);
         }
         var numerosOperar = ParticionarCadena(expresion,"-");
