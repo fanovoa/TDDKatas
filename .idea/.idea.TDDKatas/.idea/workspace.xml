@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,15 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="17683000" />
-    </task>
-    <task id="LOCAL-00024" summary="🔵Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
-      <option name="closed" value="true" />
-      <created>1760907550251</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1760907550251</updated>
+      <workItem from="1760883700664" duration="18045000" />
     </task>
     <task id="LOCAL-00025" summary="🔴Si_Ingresa_varias_veces_seguidas_el_mismo_operador_DEBE_retornar_IngreseNumeroValido">
       <option name="closed" value="true" />
@@ -466,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760923198309</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="🟢Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo">
+      <option name="closed" value="true" />
+      <created>1760923433476</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1760923433476</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +474,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_resta_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_resta_DEBE_retornar_su_resultado" />
@@ -500,24 +498,12 @@
     <MESSAGE value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
     <MESSAGE value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
     <MESSAGE value="Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
+    <MESSAGE value="Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs</url>
-          <line>44</line>
-          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Calculadora\Calculadora.cs" containingFunctionPresentation="Method 'HacerMultiplicacion'">
-            <startOffsets>
-              <option value="1743" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1798" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs</url>
           <line>18</line>
@@ -529,7 +515,7 @@
               <option value="587" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

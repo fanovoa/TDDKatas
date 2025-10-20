@@ -30,32 +30,33 @@ public class Calculadora
     
     private string HacerDivision(string expresion)
     {
-        var cantidadNegativos = expresion.Count(c => c == '-');
-        if (cantidadNegativos > 0)
+        var tieneSignosNegativosPares=TieneSignosNegativosPares(expresion);
+        if (ContieneSignosNegativos(expresion))
         {
             expresion = expresion.Replace("-", "");
         }
         var numerosAOperar = ParticionarCadena(expresion,"/");
         if (numerosAOperar[1] == 0) return "0";
         var resultado= numerosAOperar[0]/numerosAOperar[1];
-        return cantidadNegativos%2 ==0 ?  resultado.ToString() : string.Concat("-",resultado.ToString());
+        return   tieneSignosNegativosPares?  resultado.ToString() : string.Concat("-",resultado.ToString());
     }
     private string HacerMultiplicacion(string expresion)
     {
-        var cantidadNegativos = expresion.Count(c => c == '-');
-        if (cantidadNegativos > 0)
+        var tieneSignosNegativosPares = TieneSignosNegativosPares(expresion);
+
+        if (ContieneSignosNegativos(expresion))
         {
             expresion = expresion.Replace("-", "");
         }
         var numerosOperar = ParticionarCadena(expresion,"*");
         var resultado= numerosOperar[0]*numerosOperar[1];
-        return cantidadNegativos%2 ==0 ?  resultado.ToString() : string.Concat("-",resultado.ToString());
+        return tieneSignosNegativosPares ?  resultado.ToString() : string.Concat("-",resultado.ToString());
 
     }
+    
     private string HacerResta(string expresion)
     {
-        var cantidadNegativos = expresion.Count(c => c == '-');
-        if (cantidadNegativos % 2 == 0)
+        if (TieneSignosNegativosPares(expresion))
         {
             expresion = (string.Concat("", expresion.AsSpan(1))).Replace("-","+");
             return HacerSuma(expresion);
@@ -117,4 +118,9 @@ public class Calculadora
     private  string ConvertirAMinusculas(string expresion) => expresion.ToLower();
     private bool ContieneLetras(string expresion) => expresion.Any(char.IsLetter);
     private bool EsVacioNulo(string expresion) => string.IsNullOrEmpty(expresion);
+    
+    private static bool TieneSignosNegativosPares(string expresion) => expresion.Count(c => c == '-')%2 ==0;
+
+    private static bool ContieneSignosNegativos(string expresion) => expresion.Count(c => c == '-') > 0;
+
 }
