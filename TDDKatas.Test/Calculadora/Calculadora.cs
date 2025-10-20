@@ -21,8 +21,8 @@ public class Calculadora
         if( SoloContieneOperadores(expresion)) return MENSAJE_ERROR;
         if(!EsUnaCombinacionValidaOperador(expresion)) return MENSAJE_ERROR;
 
-        if (EsUnaSuma(expresion))  return HacerSuma(expresion);
-        if (EsUnaResta(expresion)) return HacerResta(expresion);
+        if (EsUnaSuma(expresion) )  return HacerSuma(expresion);
+        if (EsUnaResta(expresion) && !expresion.Contains("/")) return HacerResta(expresion);
         if (EsUnaMultiplicacion(expresion)) return HacerMultiplicacion(expresion);
         if (EsUnaDivision(expresion)) return HacerDivision(expresion);
       
@@ -36,10 +36,15 @@ public class Calculadora
 
     private string HacerDivision(string expresion)
     {
+        var cantidadNegativos = expresion.Count(c => c == '-');
+        if (cantidadNegativos > 0)
+        {
+            expresion = expresion.Replace("-", "");
+        }
         var numerosAOperar = ParticionarCadena(expresion,"/");
         if (numerosAOperar[1] == 0) return "0";
         var resultado= numerosAOperar[0]/numerosAOperar[1];
-        return resultado.ToString();
+        return cantidadNegativos%2 ==0 ?  resultado.ToString() : string.Concat("-",resultado.ToString());
     }
 
     private string HacerMultiplicacion(string expresion)
