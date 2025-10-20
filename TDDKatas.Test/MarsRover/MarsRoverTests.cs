@@ -83,6 +83,7 @@ public class MarsRoverTests
             if (comando == 'M')
             {
                 if (orientacion[orientacion_inicial] == 'E') posicion_X++;
+                else if (orientacion[orientacion_inicial] == 'W') posicion_X--;
                 else posicion_Y++;
             }
             if (comando == 'R') orientacion_inicial++;
