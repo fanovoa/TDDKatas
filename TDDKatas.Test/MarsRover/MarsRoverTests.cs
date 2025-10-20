@@ -28,6 +28,14 @@ public class MarsRoverTests
         posicionFinal.Should().Be("0:2:N");
     }
 
+    [Fact]
+    public void Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones()
+    {
+        var comando = "MMM";
+        var posicionFinal = CalcularPosicion(comando);
+        posicionFinal.Should().Be("0:3:N");
+    }
+
     private object CalcularPosicion(string comando)
     {
         if( string.IsNullOrWhiteSpace(comando))
