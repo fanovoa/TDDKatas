@@ -140,5 +140,13 @@ public class CalculadoraTest
         resultado.Should().Be(esperado);
     }
 
+    [Fact]
+    public void Si_se_restan_dos_numeros_negativos_deben_sumarse()
+    {
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("-2-2");
+        resultado.Should().Be("4");
+    }
+
 }
 
