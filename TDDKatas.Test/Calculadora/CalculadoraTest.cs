@@ -163,5 +163,6 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena("-2/-2");
         resultado.Should().Be("1");
     }
+    
 }
 

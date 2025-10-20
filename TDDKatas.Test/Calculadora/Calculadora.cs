@@ -20,19 +20,14 @@ public class Calculadora
         if(ContieneCaracteresNoPermitidos(expresion)) return MENSAJE_ERROR;
         if( SoloContieneOperadores(expresion)) return MENSAJE_ERROR;
         if(!EsUnaCombinacionValidaOperador(expresion)) return MENSAJE_ERROR;
-
         if (EsUnaSuma(expresion) )  return HacerSuma(expresion);
-        if (EsUnaResta(expresion) && !expresion.Contains("/")) return HacerResta(expresion);
+        if (EsUnaResta(expresion) ) return HacerResta(expresion);
         if (EsUnaMultiplicacion(expresion)) return HacerMultiplicacion(expresion);
         if (EsUnaDivision(expresion)) return HacerDivision(expresion);
       
         return expresion;
     }
 
-    private bool EsUnaDivision(string expresion)
-    {
-        return expresion.Contains("/");
-    }
 
     private string HacerDivision(string expresion)
     {
@@ -79,9 +74,10 @@ public class Calculadora
         return [sumando1,sumando2];
     }
     
+    private bool EsUnaDivision(string expresion) => expresion.Contains("/");
     private bool EsUnaMultiplicacion(string expresion) => expresion.Contains("*");
     private bool EsUnaSuma(string expresion) =>  expresion.Contains("+");
-    private bool EsUnaResta(string expresion) => expresion.Contains("-");
+    private bool EsUnaResta(string expresion) => expresion.Contains("-") && !expresion.Contains("/");
     
     private bool EsUnaCombinacionValidaOperador(string expresion)
     
