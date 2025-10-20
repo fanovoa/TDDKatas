@@ -5,27 +5,19 @@ namespace TDDKatas.Calculadora;
 public class Calculadora
 {
     
-    const string MENSAJE_ERROR = "Ingrese un número válido.";
-    private static readonly string[] OPERADORES = ["+", "-", "*", "/"];
+    const string MensajeEror = "Ingrese un número válido.";
 
-    public string ValidarCadena(string expresion)
+    public string ValidarCadena(string? expresion)
     {
-        if (expresion == null) return MENSAJE_ERROR;
+
+        expresion = Normalizador.NormalizarTexto(expresion);
+        if (string.IsNullOrEmpty(expresion)) return MensajeEror;
         
-        expresion = ConvertirAMinusculas(expresion);
-        expresion= QuitaOperadoresDuplicados(expresion);
-        expresion = expresion.Replace(" ","");
-        
-        if (EsVacioNulo(expresion) || ContieneLetras(expresion)) return MENSAJE_ERROR;
-        if(ContieneCaracteresNoPermitidos(expresion)) return MENSAJE_ERROR;
-        if( SoloContieneOperadores(expresion)) return MENSAJE_ERROR;
-        if(!EsUnaCombinacionValidaOperador(expresion)) return MENSAJE_ERROR;
+        if(!ValidadorOperacion.EsUnaOperacionValida(expresion)) return MensajeEror;
         if (EsUnaSuma(expresion) )  return HacerSuma(expresion);
         if (EsUnaResta(expresion) ) return HacerResta(expresion);
         if (EsUnaMultiplicacion(expresion)) return HacerMultiplicacion(expresion);
-        if (EsUnaDivision(expresion)) return HacerDivision(expresion);
-      
-        return expresion;
+        return EsUnaDivision(expresion) ? HacerDivision(expresion) : expresion;
     }
     
     private string HacerDivision(string expresion)
@@ -83,44 +75,7 @@ public class Calculadora
     private bool EsUnaSuma(string expresion) =>  expresion.Contains("+");
     private bool EsUnaResta(string expresion) => expresion.Contains("-") && !expresion.Contains("/") && !expresion.Contains("*");
     
-    private bool EsUnaCombinacionValidaOperador(string expresion)
-    
-        {
-            //Estructura regex
-            //^ → inicio de la cadena
-            // -? -> puede contener el signo negativo al inicio
-            //\d+ → uno o más dígitos (número inicial)
-            //([+\-*/]\d+)? → grupo opcional que puede tener:
-            // -? -> puede contener el signo negativo en el segyndo digito
-            //? → indica que ese grupo puede estar o no presente
-            //$ → fin de la cadena
-            return Regex.IsMatch(expresion, @"^-?\d+([+\-*/]\-?\d+)?$");
-        }
-    
-    private bool SoloContieneOperadores(string expresion)
-    {
-        foreach (var operador in OPERADORES)
-        {
-            if (expresion == operador)
-            {
-                return true;
-            };
-            
-        }
-        return false;
-    }
-    
-    private bool ContieneCaracteresNoPermitidos(string expresion)
-    {
-        return expresion.Any(caracter => !char.IsDigit(caracter) && !OPERADORES.Contains(caracter.ToString()));
-    }
-    private string QuitaOperadoresDuplicados(string expresion) =>  Regex.Replace(expresion, @"([+\-*/])\1+", "$1");
-    private  string ConvertirAMinusculas(string expresion) => expresion.ToLower();
-    private bool ContieneLetras(string expresion) => expresion.Any(char.IsLetter);
-    private bool EsVacioNulo(string expresion) => string.IsNullOrEmpty(expresion);
-    
     private static bool TieneSignosNegativosPares(string expresion) => expresion.Count(c => c == '-')%2 ==0;
-
     private static bool ContieneSignosNegativos(string expresion) => expresion.Count(c => c == '-') > 0;
 
 }
