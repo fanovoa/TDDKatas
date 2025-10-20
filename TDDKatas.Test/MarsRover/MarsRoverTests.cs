@@ -79,6 +79,9 @@ public class MarsRoverTests
                     case 'W':
                         posicion_X--;
                         break;
+                    case 'S':
+                        posicion_Y--;
+                        break;
                     default:
                         posicion_Y++;
                         break;
