@@ -89,4 +89,15 @@ public class MarsRoverTests
         //assert
         posicionFinal.Should().Be("0:-1:S");
     }
+
+    [Fact]
+    public void  Si_supera_10_en_x_DEBE_volver_a_0()
+    {
+        //arrange
+        var marsRover = new MarsRover();
+        //act
+        var posicionFinal = marsRover.CalcularPosicion("MMMMMMMMMMM");
+        //assert
+        posicionFinal.Should().Be("0:0:N");
+    }
 }
