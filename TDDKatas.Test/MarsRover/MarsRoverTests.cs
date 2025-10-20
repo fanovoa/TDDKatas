@@ -55,10 +55,10 @@ public class MarsRoverTests
     }
 
     [Fact]
-    public void Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_x_mantenerse_en_y()
+    public void Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x()
     {
         var posicionFinal = CalcularPosicion("LLM");
-        posicionFinal.Should().Be("-1:0:S");
+        posicionFinal.Should().Be("0:-1:S");
     }
     private string CalcularPosicion(string comandos)
     {
