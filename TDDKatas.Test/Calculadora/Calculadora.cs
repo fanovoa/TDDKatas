@@ -59,11 +59,11 @@ public class Calculadora
         var resultado= numerosOperar[0]+numerosOperar[1];
         return resultado.ToString();
     }
-    private int[] ParticionarCadena(string expresion, string operador)
+    private double[] ParticionarCadena(string expresion, string operador)
     {
         var cadenaParticionada = expresion.Split(operador);
-        var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
-        var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
+        var sumando1 = double.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
+        var sumando2 = double.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
         return [sumando1,sumando2];
     }
     
