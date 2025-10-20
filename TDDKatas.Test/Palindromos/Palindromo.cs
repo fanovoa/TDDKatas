@@ -9,7 +9,7 @@ public class Palindromo
         _texto = texto;   
     }
     
-    public bool ValidarSiEsLaPalabraEsPalindromo()
+    public bool esPalindromo()
     {
         if (EsNuloElTexto()) return false;
         var textoNormalizado = NormalizarTexto(_texto);

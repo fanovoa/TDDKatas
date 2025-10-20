@@ -13,7 +13,7 @@ public class PalindromosTest
         var _palindromo =  new Palindromo(palabra);
         
         //act
-        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        var esPalindromo = _palindromo.esPalindromo();
         
         //assert
         esPalindromo.Should().Be(true);
@@ -30,7 +30,7 @@ public class PalindromosTest
         var _palindromo =  new Palindromo(palabra);
         
         //act
-        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        var esPalindromo = _palindromo.esPalindromo();
         
         //assert
         esPalindromo.Should().Be(true);
@@ -46,7 +46,7 @@ public class PalindromosTest
         var _palindromo =  new Palindromo(palabra);
         
         //act
-        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        var esPalindromo = _palindromo.esPalindromo();
         
         //assert
         esPalindromo.Should().Be(true);
@@ -65,7 +65,7 @@ public class PalindromosTest
         var _palindromo =  new Palindromo(texto);
         
         //act
-        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        var esPalindromo = _palindromo.esPalindromo();
         
         //assert
         esPalindromo.Should().Be(true);
@@ -82,7 +82,7 @@ public class PalindromosTest
         var _palindromo =  new Palindromo(texto);
         
         //act
-        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        var esPalindromo = _palindromo.esPalindromo();
         
         //assert
         esPalindromo.Should().Be(false);
@@ -96,7 +96,7 @@ public class PalindromosTest
         var _palindromo =  new Palindromo(null);
         
         //act
-        var esPalindromo = _palindromo.ValidarSiEsLaPalabraEsPalindromo();
+        var esPalindromo = _palindromo.esPalindromo();
         
         //assert
         esPalindromo.Should().Be(false);
