@@ -22,35 +22,17 @@ public class MarsRoverTests
         var posicionFinal = CalcularPosicion(comando);
         posicionFinal.Should().Be(esperado);
     }
-
-    [Fact]
-    public void Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este()
+    
+    [Theory]
+    [InlineData("MR","0:1:E")]
+    [InlineData("MRR","0:1:S")]
+    [InlineData("MRRR","0:1:W")]
+    [InlineData("MRRRR","0:1:N")]
+    public void Si_solo_avanza_una_posicion_y_gira_n_veces_a_la_derecha_DEBE_mantener_el_primer_movimento_y_solo_cambiar_su_orientacion(string comando, string posicionFinalEsperada)
     {
-        var posicionFinal = CalcularPosicion("MR");
-        posicionFinal.Should().Be("0:1:E");
+        var posicionFinal = CalcularPosicion(comando);
+        posicionFinal.Should().Be(posicionFinalEsperada);
     }
-
-    [Fact]
-    public void Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur()
-    {
-        var posicionFinal = CalcularPosicion("MRR");
-        posicionFinal.Should().Be("0:1:S");
-    }
-
-    [Fact]
-    public void Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste()
-    {
-        var posicionFinal = CalcularPosicion("MRRR");
-        posicionFinal.Should().Be("0:1:W");
-    }
-
-    [Fact]
-    public void Si_ingreso_un_movimento_y_cuatro_giros_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_norte()
-    {
-        var posicionFinal = CalcularPosicion("MRRRR");
-        posicionFinal.Should().Be("0:1:N");
-    }
-
     [Fact]
     public void Si_ingreso_un_movimiento_y_un_giro_a_la_izquierda_DEBE_avanzar_un_movimieto_y_orientarse_al_oeste()
     {
@@ -82,9 +64,18 @@ public class MarsRoverTests
         {
             if (comando == 'M')
             {
-                if (orientacion[orientacion_inicial] == 'E') posicion_X++;
-                else if (orientacion[orientacion_inicial] == 'W') posicion_X--;
-                else posicion_Y++;
+                switch (orientacion[orientacion_inicial])
+                {
+                    case 'E':
+                        posicion_X++;
+                        break;
+                    case 'W':
+                        posicion_X--;
+                        break;
+                    default:
+                        posicion_Y++;
+                        break;
+                }
             }
             if (comando == 'R') orientacion_inicial++;
             if (comando == 'L') orientacion_inicial--;
