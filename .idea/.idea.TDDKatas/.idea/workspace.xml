@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c07529b-b161-4ab0-a09f-6cc003f907c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,18 +20,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "fanovoa"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fanovoa&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/fanovoa/TDDKatas.git",
-    "accountId": "8239d683-c138-40b9-a562-6fd4209d22a2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fanovoa/TDDKatas.git&quot;,
+    &quot;accountId&quot;: &quot;8239d683-c138-40b9-a562-6fd4209d22a2&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
@@ -44,10 +43,10 @@
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="34GDjaQc50dxEv55OnoTIKho6qP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,6 +58,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "b2f7e8e0-877c-4c7f-8aad-2ccae58dbb17.executor": "Debug",
     "git-widget-placeholder": "Palindromos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -354,6 +354,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/Palindromo.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Palindromos\Palindromo.cs" containingFunctionPresentation="Method 'NormalizarTexto'">
+            <startOffsets>
+              <option value="551" />
+            </startOffsets>
+            <endOffsets>
+              <option value="693" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

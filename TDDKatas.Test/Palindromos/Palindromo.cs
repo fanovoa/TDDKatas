@@ -1,30 +1,42 @@
 ﻿namespace TDDKatas.Palindromos;
 
-public class Palindromo(string texto)
+public class Palindromo
 {
-    private string Texto { get; set; } = texto;
+    private readonly string _texto;
 
+    public Palindromo(string texto)
+    {
+        _texto = texto;   
+    }
+    
     public bool ValidarSiEsLaPalabraEsPalindromo()
     {
         if (EsNuloElTexto()) return false;
-        ConvertirAMinusculas();
-        if (ContieneSimbolos()) ReemplazaSimbolos();
-        if (ContieneAcentos()) ReemplazaAcentos();
-        return !EstaVacioElTexto() && Texto.SequenceEqual(Texto.ToCharArray().Reverse());
+        var textoNormalizado = NormalizarTexto(_texto);
+        return !ElTextoEstaVacio(textoNormalizado) && textoNormalizado.SequenceEqual(textoNormalizado.ToCharArray().Reverse());
     }
 
-    private bool EsNuloElTexto() => Texto == null;
-
-    private bool EstaVacioElTexto() => Texto =="";
-
-    private void ConvertirAMinusculas()
+    private static bool ElTextoEstaVacio(string texto) => string.IsNullOrEmpty(texto);
+    
+    private string NormalizarTexto ( string texto)
     {
-        Texto = Texto.ToLower();
+        var textoEnMinusculas = texto.ToLowerInvariant();
+        var textoSinSimbolos = ContieneSimbolos(textoEnMinusculas)
+            ? ReemplazaSimbolos(textoEnMinusculas)
+            : textoEnMinusculas;
+
+        var textoSinAcentos =
+            ContieneAcentos(textoEnMinusculas) ? ReemplazaAcentos(textoSinSimbolos) : textoSinSimbolos;
+        
+        return textoSinAcentos;
     }
+    private bool EsNuloElTexto() => string.IsNullOrWhiteSpace(_texto);
 
-    private void ReemplazaAcentos()
+
+
+    private string ReemplazaAcentos(string texto)
     {
-        Texto = Texto
+        return texto
             .Replace("á", "a")
             .Replace("é","e")
             .Replace("í","i")
@@ -37,14 +49,14 @@ public class Palindromo(string texto)
             .Replace("Ú","U");
     }
 
-    private bool ContieneAcentos() =>  Texto.IndexOfAny("áéíóúÁÉÍÓÚ".ToCharArray())>=0;
+    private bool ContieneAcentos(string texto) =>  texto.IndexOfAny("áéíóúÁÉÍÓÚ".ToCharArray())>=0;
 
-    private void ReemplazaSimbolos()
+    private string ReemplazaSimbolos(string texto)
     {
-        var quitarSimbolos = Texto
+        var quitarSimbolos = texto
             .Where(char.IsLetterOrDigit)
             .ToArray();
-        Texto = new string(quitarSimbolos);
+        return new string(quitarSimbolos);
     }
-    private bool ContieneSimbolos() => Texto.Any(caracter => !char.IsLetterOrDigit(caracter));
+    private bool ContieneSimbolos(string texto) => texto.Any(caracter => !char.IsLetterOrDigit(caracter));
 }
