@@ -11,40 +11,33 @@ public class MarsRoverTests
         var posicionFinal = CalcularPosicion(comando);
         posicionFinal.Should().Be("0:0:N");
     }
-
-    [Fact]
-    public void Si_ingreso_M_DEBE_avanzar_una_posicion_en_Y()
+    
+    [Theory]
+    [InlineData("M","0:1:N")]
+    [InlineData("MM","0:2:N")]
+    [InlineData("MMM","0:3:N")]
+    [InlineData("MMMM","0:4:N")]
+    public void Si_ingreso_solo_movimientos_DEBE_avanzar_las_mismas_casillas_del_movimiento_en_Y(string comando, string esperado)
     {
-        var comando = "M";
         var posicionFinal = CalcularPosicion(comando);
-        posicionFinal.Should().Be("0:1:N");
+        posicionFinal.Should().Be(esperado);
     }
 
-    [Fact]
-    public void Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones()
+    private string CalcularPosicion(string comandos)
     {
-        var comando = "MM";
-        var posicionFinal = CalcularPosicion(comando);
-        posicionFinal.Should().Be("0:2:N");
-    }
-
-    [Fact]
-    public void Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones()
-    {
-        var comando = "MMM";
-        var posicionFinal = CalcularPosicion(comando);
-        posicionFinal.Should().Be("0:3:N");
-    }
-
-    private object CalcularPosicion(string comando)
-    {
-        if( string.IsNullOrWhiteSpace(comando))
-            return "0:0:N";
+        int posicion_X = 0;
+        int posicion_Y = 0;
+        string orientacion = "N";
         
-        if(comando== "M") return "0:1:N";
-        if(comando== "MM") return "0:2:N";
-        if(comando== "MMM") return "0:3:N";
+        if( string.IsNullOrWhiteSpace(comandos))
+            return string.Concat(posicion_X,":", posicion_Y,":",orientacion);
 
-        return "0:0:N";
+        foreach (var comando in comandos.ToCharArray())
+        {
+            if (comando == 'M') posicion_Y++;
+        }
+        
+        return string.Concat(posicion_X,":", posicion_Y,":",orientacion);
+        
     }
 }
