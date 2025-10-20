@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo">
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,23 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="17433000" />
-    </task>
-    <task id="LOCAL-00022" summary="🔴Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760884562501</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1760884562501</updated>
-    </task>
-    <task id="LOCAL-00023" summary="🟢Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760907095701</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1760907095701</updated>
+      <workItem from="1760883700664" duration="17683000" />
     </task>
     <task id="LOCAL-00024" summary="🔵Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -466,7 +450,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760922924569</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="🔵Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo">
+      <option name="closed" value="true" />
+      <created>1760923127087</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1760923127087</updated>
+    </task>
+    <task id="LOCAL-00072" summary="🔴Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo">
+      <option name="closed" value="true" />
+      <created>1760923198309</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1760923198309</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,8 +475,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_ingreso_11_mas_10_DEBE_Retornar_21" />
-    <MESSAGE value="Si_es_una_suma_DEBE_returnar_su_resultado" />
     <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_resta_DEBE_retornar_su_resultado" />
@@ -500,6 +498,40 @@
     <MESSAGE value="Si_divido_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
     <MESSAGE value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
     <MESSAGE value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
+    <MESSAGE value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
+    <MESSAGE value="Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs</url>
+          <line>44</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Calculadora\Calculadora.cs" containingFunctionPresentation="Method 'HacerMultiplicacion'">
+            <startOffsets>
+              <option value="1743" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1798" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Calculadora\Calculadora.cs" containingFunctionPresentation="Method 'ValidarCadena'">
+            <startOffsets>
+              <option value="531" />
+            </startOffsets>
+            <endOffsets>
+              <option value="587" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

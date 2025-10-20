@@ -27,8 +27,7 @@ public class Calculadora
       
         return expresion;
     }
-
-
+    
     private string HacerDivision(string expresion)
     {
         var cantidadNegativos = expresion.Count(c => c == '-');
@@ -41,12 +40,17 @@ public class Calculadora
         var resultado= numerosAOperar[0]/numerosAOperar[1];
         return cantidadNegativos%2 ==0 ?  resultado.ToString() : string.Concat("-",resultado.ToString());
     }
-
     private string HacerMultiplicacion(string expresion)
     {
+        var cantidadNegativos = expresion.Count(c => c == '-');
+        if (cantidadNegativos > 0)
+        {
+            expresion = expresion.Replace("-", "");
+        }
         var numerosOperar = ParticionarCadena(expresion,"*");
         var resultado= numerosOperar[0]*numerosOperar[1];
-        return resultado.ToString();
+        return cantidadNegativos%2 ==0 ?  resultado.ToString() : string.Concat("-",resultado.ToString());
+
     }
     private string HacerResta(string expresion)
     {
@@ -73,11 +77,10 @@ public class Calculadora
         var sumando2 = double.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
         return [sumando1,sumando2];
     }
-    
     private bool EsUnaDivision(string expresion) => expresion.Contains("/");
     private bool EsUnaMultiplicacion(string expresion) => expresion.Contains("*");
     private bool EsUnaSuma(string expresion) =>  expresion.Contains("+");
-    private bool EsUnaResta(string expresion) => expresion.Contains("-") && !expresion.Contains("/");
+    private bool EsUnaResta(string expresion) => expresion.Contains("-") && !expresion.Contains("/") && !expresion.Contains("*");
     
     private bool EsUnaCombinacionValidaOperador(string expresion)
     
