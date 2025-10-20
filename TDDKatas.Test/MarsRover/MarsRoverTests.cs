@@ -109,6 +109,6 @@ public class MarsRoverTests
         //act
         var posicionFinal = marsRover.CalcularPosicion("MRMMMMMMMMMMM");
         //assert
-        posicionFinal.Should().Be("0:0:N");
+        posicionFinal.Should().Be("0:1:E");
     }
 }

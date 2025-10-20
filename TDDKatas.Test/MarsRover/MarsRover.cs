@@ -35,6 +35,7 @@ public class MarsRover
             if(orientacion_inicial >3 ) orientacion_inicial = 0;
             if (orientacion_inicial <0 ) orientacion_inicial = 3;
             if (posicion_Y > 10) posicion_Y = 0;
+            if (posicion_X > 10) posicion_X = 0;
 
         }
         
