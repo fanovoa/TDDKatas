@@ -14,7 +14,7 @@ public class MarsRoverTests
 
     private object CalcularPosicion(string comando)
     {
-        if( comando =="")
+        if( string.IsNullOrWhiteSpace(comando))
             return "0:0:N";
         return "";
     }
