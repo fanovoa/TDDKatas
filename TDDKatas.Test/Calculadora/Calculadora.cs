@@ -50,6 +50,12 @@ public class Calculadora
     }
     private string HacerResta(string expresion)
     {
+        var cantidadNegativos = expresion.Count(c => c == '-');
+        if (cantidadNegativos % 2 == 0)
+        {
+            expresion = (""+expresion.Substring(1)).Replace("-","+");
+            return HacerSuma(expresion);
+        }
         var numerosOperar = ParticionarCadena(expresion,"-");
         var resultado= numerosOperar[0]-numerosOperar[1];
         return resultado.ToString();
