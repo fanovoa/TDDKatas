@@ -142,6 +142,14 @@ public class CalculadoraTest
         var calculadora = new Calculadora();
         var resultado = calculadora.ValidarCadena("3/2");
         resultado.Should().Be("1.5");
-    } 
+    }
+
+    [Fact]
+    public void Si_la_division_es_entre_cero_DEBE_retornar_su_cero()
+    {
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("3/0");
+        resultado.Should().Be("0");
+    }
 }
 
