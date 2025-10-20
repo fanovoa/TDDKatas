@@ -156,5 +156,12 @@ public class CalculadoraTest
         resultado.Should().Be("-1");
     }
 
+    [Fact]
+    public void Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo()
+    {
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("-2/-2");
+        resultado.Should().Be("1");
+    }
 }
 
