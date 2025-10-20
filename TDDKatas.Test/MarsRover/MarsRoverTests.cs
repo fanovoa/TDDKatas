@@ -63,6 +63,8 @@ public class MarsRoverTests
             if (comando == 'M') posicion_Y++;
             if (comando == 'R') orientacion_inicial++;
             
+            if(orientacion_inicial >3 ) orientacion_inicial = 0;
+            
         }
         
         return string.Concat(posicion_X,":", posicion_Y,":",orientacion[orientacion_inicial]);
