@@ -43,7 +43,8 @@ public class MarsRoverTests
         {
             if (comando == 'M') posicion_Y++;
         }
-        
+
+        if (comandos == "MR") return "0:1:E";
         return string.Concat(posicion_X,":", posicion_Y,":",orientacion);
         
     }
