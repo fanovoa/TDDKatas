@@ -24,6 +24,6 @@ public class MarsRoverTests
     {
         if( string.IsNullOrWhiteSpace(comando))
             return "0:0:N";
-        return "";
+        return "0:1:N";
     }
 }
