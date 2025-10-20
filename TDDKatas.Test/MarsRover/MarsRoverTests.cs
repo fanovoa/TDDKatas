@@ -51,6 +51,13 @@ public class MarsRoverTests
         posicionFinal.Should().Be("0:1:N");
     }
 
+    [Fact]
+    public void Si_ingreso_un_movimiento_y_un_giro_a_la_izquierda_DEBE_avanzar_un_movimieto_y_orientarse_al_oeste()
+    {
+        var posicionFinal = CalcularPosicion("ML");
+        posicionFinal.Should().Be("0:1:W");
+    }
+
     private string CalcularPosicion(string comandos)
     {
         int posicion_X = 0;
