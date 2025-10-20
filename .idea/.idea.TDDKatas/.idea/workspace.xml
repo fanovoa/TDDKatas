@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🟢Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔵Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,14 +58,6 @@
   }
 }]]></component>
   <component name="TaskManager">
-    <task id="LOCAL-00009" summary="🔴Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760847844752</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1760847844752</updated>
-    </task>
     <task id="LOCAL-00010" summary="🟢Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido">
       <option name="closed" value="true" />
       <created>1760847898743</created>
@@ -155,7 +144,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="14370000" />
+      <workItem from="1760883700664" duration="14701000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -461,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760918462976</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="🔵Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado">
+      <option name="closed" value="true" />
+      <created>1760920317996</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1760920317996</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +467,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
@@ -493,6 +489,7 @@
     <MESSAGE value="Si_es_una_multiplicacion_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_multiplicacion_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_multiplicacion_DEBE_retornar_su_resultado" />
+    <MESSAGE value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />

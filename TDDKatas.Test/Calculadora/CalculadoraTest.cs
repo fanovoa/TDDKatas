@@ -135,5 +135,13 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena("2/2");
         resultado.Should().Be("1");
     } 
+    
+    [Fact]
+    public void Si_el_resultado_de_la_division_es_decimal_DEBE_retornar_su_resultado()
+    {
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("3/2");
+        resultado.Should().Be("1.5");
+    } 
 }
 
