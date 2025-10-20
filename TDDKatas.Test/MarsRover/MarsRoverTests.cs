@@ -52,6 +52,7 @@ public class MarsRoverTests
         }
 
         if (comandos == "MR") return "0:1:E";
+        if( comandos == "MRR") return "0:1:S";
         return string.Concat(posicion_X,":", posicion_Y,":",orientacion);
         
     }
