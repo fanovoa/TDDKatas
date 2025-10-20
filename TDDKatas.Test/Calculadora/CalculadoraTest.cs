@@ -127,29 +127,18 @@ public class CalculadoraTest
         var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be(esperado);
     }
-
-    [Fact]
-    public void Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado()
-    {
-        var calculadora = new Calculadora();
-        var resultado = calculadora.ValidarCadena("2/2");
-        resultado.Should().Be("1");
-    } 
     
-    [Fact]
-    public void Si_el_resultado_de_la_division_es_decimal_DEBE_retornar_su_resultado()
+    [Theory]
+    [InlineData("2/2", "1")]
+    [InlineData("3/2", "1.5")]
+    [InlineData("3/0", "0")]
+    
+    public void Si_es_una_divison_DEBE_retornar_su_resultado(string cadena, string esperado)
     {
         var calculadora = new Calculadora();
-        var resultado = calculadora.ValidarCadena("3/2");
-        resultado.Should().Be("1.5");
+        var resultado = calculadora.ValidarCadena(cadena);
+        resultado.Should().Be(esperado);
     }
 
-    [Fact]
-    public void Si_la_division_es_entre_cero_DEBE_retornar_su_cero()
-    {
-        var calculadora = new Calculadora();
-        var resultado = calculadora.ValidarCadena("3/0");
-        resultado.Should().Be("0");
-    }
 }
 
