@@ -8,8 +8,8 @@ public class CalculadoraTest
     [Fact]
     public void Si_Ingreso_Vacio_DEBE_Retornar_IngreseNumeroValido()
     {
-        var calculadora = new Calculadora("");
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("");
         resultado.Should().Be("Ingrese un número válido.");
     }
 
@@ -18,8 +18,8 @@ public class CalculadoraTest
     [InlineData(null)]
     public void Si_Ingreso_Vacio_Nulo_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
     
@@ -31,8 +31,8 @@ public class CalculadoraTest
     [InlineData("camión")]
     public void Si_CadenaACalcular_Contiene_Letras_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
     
@@ -42,16 +42,16 @@ public class CalculadoraTest
     [InlineData("??")]
     public void Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
     }
     
     [Fact]
     public void Si_Ingreso_Unicamente_Simbolos_Permitidos_Debe_Retornar_IngreseNumeroValido()
     {
-        var calculadora = new Calculadora("+");
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("+");
         resultado.Should().Be("Ingrese un número válido.");
     }
 
@@ -65,8 +65,8 @@ public class CalculadoraTest
     [InlineData("-----")]
     public void Si_no_es_una_combinacion_valida_de_operadores_DEBE_Retornar_IngreseNumeroValido(string cadena)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be("Ingrese un número válido.");
 
     }
@@ -77,8 +77,8 @@ public class CalculadoraTest
     [InlineData("100","100")]
     public void Si_Ingreso_solo_un_numero_DEBE_Retornar_El_MismoNumero(string cadena, string esperado)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be(esperado);
     }
 
@@ -90,8 +90,8 @@ public class CalculadoraTest
     [InlineData("-2+5","3")]
     public void Si_es_una_suma_DEBE_returnar_su_resultado(string cadena, string esperado)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be(esperado);
     }
 
@@ -99,8 +99,8 @@ public class CalculadoraTest
     [InlineData("5 + 3", "8")]
     public void Si_es_una_suma_que_contiene_espacios_DEBE_retornar_su_resultado(string cadena, string esperado)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be(esperado);
     }
 
@@ -110,8 +110,8 @@ public class CalculadoraTest
     [InlineData("2 - 3", "-1")]
     public void Si_es_una_resta_DEBE_retornar_su_resultado(string cadena, string esperado)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be(esperado);
     }
 
@@ -123,16 +123,16 @@ public class CalculadoraTest
     [InlineData("5 * 5 ", "25")]
     public void Si_es_una_multiplicacion_DEBE_retornar_su_resultado(string cadena, string esperado)
     {
-        var calculadora = new Calculadora(cadena);
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena(cadena);
         resultado.Should().Be(esperado);
     }
 
     [Fact]
     public void Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado()
     {
-        var calculadora = new Calculadora("2/2");
-        var resultado = calculadora.ValidarCadena();
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("2/2");
         resultado.Should().Be("1");
     } 
 }

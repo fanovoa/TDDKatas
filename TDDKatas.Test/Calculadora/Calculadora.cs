@@ -2,71 +2,76 @@
 
 namespace TDDKatas.Calculadora;
 
-public class Calculadora(string cadena)
+public class Calculadora
 {
     
-    private string  Cadena { get; set; } = cadena;
     const string MENSAJE_ERROR = "Ingrese un número válido.";
     private static readonly string[] OPERADORES = ["+", "-", "*", "/"];
 
-    public string ValidarCadena()
+    public string ValidarCadena(string expresion)
     {
+        if (expresion == null) return MENSAJE_ERROR;
         
-        if (Cadena == null) return MENSAJE_ERROR;
+        expresion = ConvertirAMinusculas(expresion);
+        expresion= QuitaOperadoresDuplicados(expresion);
+        expresion = expresion.Replace(" ","");
         
-        ConvertirAMinusculas();
-        QuitaOperadoresDuplicados();
-        Cadena = Cadena.Replace(" ","");
-        
-        if (EsVacioNulo() || ContieneLetras()) return MENSAJE_ERROR;
-        if(ContieneCaracteresNoPermitidos()) return MENSAJE_ERROR;
-        if( SoloContieneOperadores()) return MENSAJE_ERROR;
-        if(!EsUnaCombinacionValidaOperador()) return MENSAJE_ERROR;
+        if (EsVacioNulo(expresion) || ContieneLetras(expresion)) return MENSAJE_ERROR;
+        if(ContieneCaracteresNoPermitidos(expresion)) return MENSAJE_ERROR;
+        if( SoloContieneOperadores(expresion)) return MENSAJE_ERROR;
+        if(!EsUnaCombinacionValidaOperador(expresion)) return MENSAJE_ERROR;
 
-        if (EsUnaSuma())  return HacerSuma();
-        if (EsUnaResta()) return HacerResta();
-        if (EsUnaMultiplicacion()) return HacerMultiplicacion();
-        if (Cadena.Contains("/"))
-        {
-            var numerosAOperar = ParticionarCadena("/");
-            var resultado= numerosAOperar[0]/numerosAOperar[1];
-            return resultado.ToString();
-        }
-        
-        return Cadena;
+        if (EsUnaSuma(expresion))  return HacerSuma(expresion);
+        if (EsUnaResta(expresion)) return HacerResta(expresion);
+        if (EsUnaMultiplicacion(expresion)) return HacerMultiplicacion(expresion);
+        if (EsUnaDivision(expresion)) return HacerDivision(expresion);
+      
+        return expresion;
     }
 
-    private string HacerMultiplicacion()
+    private bool EsUnaDivision(string expresion)
     {
-        var numerosOperar = ParticionarCadena("*");
+        return expresion.Contains("/");
+    }
+
+    private string HacerDivision(string expresion)
+    {
+        var numerosAOperar = ParticionarCadena(expresion,"/");
+        var resultado= numerosAOperar[0]/numerosAOperar[1];
+        return resultado.ToString();
+    }
+
+    private string HacerMultiplicacion(string expresion)
+    {
+        var numerosOperar = ParticionarCadena(expresion,"*");
         var resultado= numerosOperar[0]*numerosOperar[1];
         return resultado.ToString();
     }
-    private string HacerResta()
+    private string HacerResta(string expresion)
     {
-        var numerosOperar = ParticionarCadena("-");
+        var numerosOperar = ParticionarCadena(expresion,"-");
         var resultado= numerosOperar[0]-numerosOperar[1];
         return resultado.ToString();
     }
-    private string HacerSuma()
+    private string HacerSuma(string expresion)
     {
-        var numerosOperar = ParticionarCadena("+");
+        var numerosOperar = ParticionarCadena(expresion,"+");
         var resultado= numerosOperar[0]+numerosOperar[1];
         return resultado.ToString();
     }
-    private int[] ParticionarCadena(string operador)
+    private int[] ParticionarCadena(string expresion, string operador)
     {
-        var cadenaParticionada = Cadena.Split(operador);
+        var cadenaParticionada = expresion.Split(operador);
         var sumando1 = int.Parse(cadenaParticionada[0] == "" ? "0": cadenaParticionada[0]);
         var sumando2 = int.Parse(cadenaParticionada[1]== "" ? "0": cadenaParticionada[1]);
         return [sumando1,sumando2];
     }
     
-    private bool EsUnaMultiplicacion() => Cadena.Contains("*");
-    private bool EsUnaSuma() =>  Cadena.Contains("+");
-    private bool EsUnaResta() => Cadena.Contains("-");
+    private bool EsUnaMultiplicacion(string expresion) => expresion.Contains("*");
+    private bool EsUnaSuma(string expresion) =>  expresion.Contains("+");
+    private bool EsUnaResta(string expresion) => expresion.Contains("-");
     
-    private bool EsUnaCombinacionValidaOperador()
+    private bool EsUnaCombinacionValidaOperador(string expresion)
     
         {
             //Estructura regex
@@ -76,14 +81,14 @@ public class Calculadora(string cadena)
             //([+\-*/]\d+)? → grupo opcional que puede tener:
             //? → indica que ese grupo puede estar o no presente
             //$ → fin de la cadena
-            return Regex.IsMatch(Cadena, @"^-?\d+([+\-*/]\d+)?$");
+            return Regex.IsMatch(expresion, @"^-?\d+([+\-*/]\d+)?$");
         }
     
-    private bool SoloContieneOperadores()
+    private bool SoloContieneOperadores(string expresion)
     {
         foreach (var operador in OPERADORES)
         {
-            if (Cadena == operador)
+            if (expresion == operador)
             {
                 return true;
             };
@@ -92,12 +97,12 @@ public class Calculadora(string cadena)
         return false;
     }
     
-    private bool ContieneCaracteresNoPermitidos()
+    private bool ContieneCaracteresNoPermitidos(string expresion)
     {
-        return Cadena.Any(caracter => !char.IsDigit(caracter) && !OPERADORES.Contains(caracter.ToString()));
+        return expresion.Any(caracter => !char.IsDigit(caracter) && !OPERADORES.Contains(caracter.ToString()));
     }
-    private void QuitaOperadoresDuplicados() => Cadena= Regex.Replace(Cadena, @"([+\-*/])\1+", "$1");
-    private  string ConvertirAMinusculas() => Cadena= Cadena.ToLower();
-    private bool ContieneLetras() => Cadena.Any(char.IsLetter);
-    private bool EsVacioNulo() => string.IsNullOrEmpty(Cadena);
+    private string QuitaOperadoresDuplicados(string expresion) =>  Regex.Replace(expresion, @"([+\-*/])\1+", "$1");
+    private  string ConvertirAMinusculas(string expresion) => expresion.ToLower();
+    private bool ContieneLetras(string expresion) => expresion.Any(char.IsLetter);
+    private bool EsVacioNulo(string expresion) => string.IsNullOrEmpty(expresion);
 }
