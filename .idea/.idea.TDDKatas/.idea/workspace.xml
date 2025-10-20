@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_divido_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo">
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,9 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e14a4e27990972fa4ae94975603bd298aaf328ee083c03b10569ee4724d57/TestInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Calculadora/CalculadoraTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +54,7 @@
     "40d80281-4954-4552-849e-b29160404832.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "b2f7e8e0-877c-4c7f-8aad-2ccae58dbb17.executor": "Debug",
     "git-widget-placeholder": "CalculadoraString",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,30 +63,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="40d80281-4954-4552-849e-b29160404832" />
   <component name="TaskManager">
-    <task id="LOCAL-00019" summary="🔴Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
-      <option name="closed" value="true" />
-      <created>1760850287997</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1760850287997</updated>
-    </task>
     <task active="true" id="Default" summary="Default task">
       <changelist id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero" />
       <created>1760883700106</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="16872000" />
-    </task>
-    <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
-      <option name="closed" value="true" />
-      <created>1760884171850</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1760884171850</updated>
+      <workItem from="1760883700664" duration="17117000" />
     </task>
     <task id="LOCAL-00021" summary="🔵Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -462,7 +449,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760921905760</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="🟢Si_divido_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo">
+      <option name="closed" value="true" />
+      <created>1760922641504</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1760922641504</updated>
+    </task>
+    <task id="LOCAL-00069" summary="🔴Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo">
+      <option name="closed" value="true" />
+      <created>1760922752101</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1760922752101</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,8 +474,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_ingreso_10_mas_11_DEBE_Retornar_21" />
-    <MESSAGE value="Si_ingreso_10_mas_11_DEBE_Retornar_21" />
     <MESSAGE value="Si_ingreso_11_mas_10_DEBE_Retornar_21" />
     <MESSAGE value="Si_ingreso_11_mas_10_DEBE_Retornar_21" />
     <MESSAGE value="Si_es_una_suma_DEBE_returnar_su_resultado" />
@@ -496,6 +497,27 @@
     <MESSAGE value="Si_se_restan_dos_numeros_negativos_deben_sumarse" />
     <MESSAGE value="Si_se_restan_dos_numeros_negativos_deben_sumarse" />
     <MESSAGE value="Si_divido_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_divido_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
+    <MESSAGE value="Si_divido_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo" />
+    <MESSAGE value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_divido_entre_dos_numeros_negativos_DEBE_retornar_su_resultado_en_positivo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Calculadora\Calculadora.cs" containingFunctionPresentation="Method 'ValidarCadena'">
+            <startOffsets>
+              <option value="841" />
+            </startOffsets>
+            <endOffsets>
+              <option value="867" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

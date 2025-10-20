@@ -91,9 +91,10 @@ public class Calculadora
             // -? -> puede contener el signo negativo al inicio
             //\d+ → uno o más dígitos (número inicial)
             //([+\-*/]\d+)? → grupo opcional que puede tener:
+            // -? -> puede contener el signo negativo en el segyndo digito
             //? → indica que ese grupo puede estar o no presente
             //$ → fin de la cadena
-            return Regex.IsMatch(expresion, @"^-?\d+([+\-*/]\d+)?$");
+            return Regex.IsMatch(expresion, @"^-?\d+([+\-*/]\-?\d+)?$");
         }
     
     private bool SoloContieneOperadores(string expresion)
