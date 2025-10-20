@@ -48,20 +48,17 @@ public class MarsRoverTests
     {
         int posicion_X = 0;
         int posicion_Y = 0;
-        string orientacion = "N";
+        int orientacion_inicial = 0;
+        char[] orientacion = ['N','E','S','W'];
         
-        if( string.IsNullOrWhiteSpace(comandos))
-            return string.Concat(posicion_X,":", posicion_Y,":",orientacion);
-
         foreach (var comando in comandos.ToCharArray())
         {
             if (comando == 'M') posicion_Y++;
+            if (comando == 'R') orientacion_inicial++;
+            
         }
-
-        if (comandos == "MR") return "0:1:E";
-        if( comandos == "MRR") return "0:1:S";
-        if( comandos == "MRRR") return "0:1:W";
-        return string.Concat(posicion_X,":", posicion_Y,":",orientacion);
+        
+        return string.Concat(posicion_X,":", posicion_Y,":",orientacion[orientacion_inicial]);
         
     }
 }
