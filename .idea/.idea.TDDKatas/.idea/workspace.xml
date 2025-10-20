@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_se_restan_dos_numeros_negativos_deben_sumarse">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔵Si_se_restan_dos_numeros_negativos_deben_sumarse">
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,22 +61,6 @@
   }
 }]]></component>
   <component name="TaskManager">
-    <task id="LOCAL-00016" summary="🔴Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760849287611</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1760849287611</updated>
-    </task>
-    <task id="LOCAL-00017" summary="🟢Si_Cadena_Contiene_Simbolo_Correo_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760849318784</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1760849318784</updated>
-    </task>
     <task id="LOCAL-00018" summary="🔵Si_Cadena_Contiene_Simbolos_No_Operables_DEBE_Retornar_IngreseNumeroValido">
       <option name="closed" value="true" />
       <created>1760850126909</created>
@@ -100,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="15768000" />
+      <workItem from="1760883700664" duration="16099000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -462,7 +445,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760920873107</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="🟢Si_se_restan_dos_numeros_negativos_deben_sumarse">
+      <option name="closed" value="true" />
+      <created>1760921622204</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1760921622204</updated>
+    </task>
+    <task id="LOCAL-00066" summary="🔵Si_se_restan_dos_numeros_negativos_deben_sumarse">
+      <option name="closed" value="true" />
+      <created>1760921669172</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1760921669172</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,8 +470,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_Ingreso_solo_un_numero_DEBE_Retornar_El_MismoNumero" />
-    <MESSAGE value="Si_ingreso_5_mas_3_DEBE_Retornar_8" />
     <MESSAGE value="Si_ingreso_5_mas_3_DEBE_Retornar_8" />
     <MESSAGE value="Si_ingreso_10_mas_11_DEBE_Retornar_21" />
     <MESSAGE value="Si_ingreso_10_mas_11_DEBE_Retornar_21" />
@@ -496,6 +493,27 @@
     <MESSAGE value="Si_la_division_es_entre_cero_DEBE_retornar_su_cero" />
     <MESSAGE value="Si_es_una_divison_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_se_restan_dos_numeros_negativos_deben_sumarse" />
+    <MESSAGE value="Si_se_restan_dos_numeros_negativos_deben_sumarse" />
+    <MESSAGE value="Si_se_restan_dos_numeros_negativos_deben_sumarse" />
     <option name="LAST_COMMIT_MESSAGE" value="Si_se_restan_dos_numeros_negativos_deben_sumarse" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Calculadora\Calculadora.cs" containingFunctionPresentation="Method 'HacerDivision'">
+            <startOffsets>
+              <option value="1494" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1522" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

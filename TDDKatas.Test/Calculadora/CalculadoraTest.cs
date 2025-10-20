@@ -148,5 +148,13 @@ public class CalculadoraTest
         resultado.Should().Be("4");
     }
 
+    [Fact]
+    public void Si_divido_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativo()
+    {
+        var calculadora = new Calculadora();
+        var resultado = calculadora.ValidarCadena("-2/2");
+        resultado.Should().Be("-1");
+    }
+
 }
 
