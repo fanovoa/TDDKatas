@@ -37,6 +37,7 @@ public class Calculadora
     private string HacerDivision(string expresion)
     {
         var numerosAOperar = ParticionarCadena(expresion,"/");
+        if (numerosAOperar[1] == 0) return "0";
         var resultado= numerosAOperar[0]/numerosAOperar[1];
         return resultado.ToString();
     }

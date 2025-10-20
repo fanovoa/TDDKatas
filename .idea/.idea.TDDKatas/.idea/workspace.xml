@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔵Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
+    <list default="true" id="c027b796-69bb-43bf-bb8e-25d1b3a4cf54" name="Changes" comment="🔴Si_la_division_es_entre_cero_DEBE_retornar_su_cero">
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Calculadora/Calculadora.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Calculadora/CalculadoraTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Calculadora/CalculadoraTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
@@ -58,30 +61,6 @@
   }
 }]]></component>
   <component name="TaskManager">
-    <task id="LOCAL-00010" summary="🟢Si_Ingreso_contiene_letras_acentuadasMayusculas_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760847898743</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1760847898743</updated>
-    </task>
-    <task id="LOCAL-00011" summary="🔵Si_CadenaACalcular_Contiene_Letras_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760848885073</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1760848885073</updated>
-    </task>
-    <task id="LOCAL-00012" summary="🔴Si_Cadena_Contiene_Simbolo_Admiracion_DEBE_Retornar_IngreseNumeroValido">
-      <option name="closed" value="true" />
-      <created>1760849063800</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1760849063800</updated>
-    </task>
     <task id="LOCAL-00013" summary="🟢Si_Cadena_Contiene_Simbolo_Admiracion_DEBE_Retornar_IngreseNumeroValido">
       <option name="closed" value="true" />
       <created>1760849116902</created>
@@ -144,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760883700106</updated>
-      <workItem from="1760883700664" duration="14701000" />
+      <workItem from="1760883700664" duration="15035000" />
     </task>
     <task id="LOCAL-00020" summary="🟢Si_Ingresa_Un_Unico_Numero_DEBE_Retornar_El_MismoNumero">
       <option name="closed" value="true" />
@@ -458,7 +437,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760920317996</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="🔴Si_el_resultado_de_la_division_es_decimal_DEBE_retornar_su_resultado">
+      <option name="closed" value="true" />
+      <created>1760920539675</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1760920539675</updated>
+    </task>
+    <task id="LOCAL-00060" summary="🟢Si_el_resultado_de_la_division_es_decimal_DEBE_retornar_su_resultado">
+      <option name="closed" value="true" />
+      <created>1760920584331</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1760920584333</updated>
+    </task>
+    <task id="LOCAL-00061" summary="🔴Si_la_division_es_entre_cero_DEBE_retornar_su_cero">
+      <option name="closed" value="true" />
+      <created>1760920664046</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1760920664046</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,9 +470,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_Ingresa_los_operadores_segudos_mas_asterisco_resta_divison_DEBE_retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
-    <MESSAGE value="Si_Ingresa_los_operadores_segudos_resta_asterisco_mas_divison_DEBE_retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_no_es_una_combinacion_valida_de_operadores_DEBE_Retornar_IngreseNumeroValido" />
     <MESSAGE value="Si_Ingreso_menos_dos_DEBE_retorar_menos_dos" />
     <MESSAGE value="Si_Ingreso_menos_dos_DEBE_retorar_menos_dos" />
@@ -492,6 +492,9 @@
     <MESSAGE value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
     <MESSAGE value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_es_una_division_por_un_numero_diferente_a_cero_DEBE_retornar_su_resultado" />
+    <MESSAGE value="Si_el_resultado_de_la_division_es_decimal_DEBE_retornar_su_resultado" />
+    <MESSAGE value="Si_el_resultado_de_la_division_es_decimal_DEBE_retornar_su_resultado" />
+    <MESSAGE value="Si_la_division_es_entre_cero_DEBE_retornar_su_cero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_la_division_es_entre_cero_DEBE_retornar_su_cero" />
   </component>
 </project>
