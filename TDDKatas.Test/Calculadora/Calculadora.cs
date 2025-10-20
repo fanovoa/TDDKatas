@@ -26,6 +26,12 @@ public class Calculadora(string cadena)
         if (EsUnaSuma())  return HacerSuma();
         if (EsUnaResta()) return HacerResta();
         if (EsUnaMultiplicacion()) return HacerMultiplicacion();
+        if (Cadena.Contains("/"))
+        {
+            var numerosAOperar = ParticionarCadena("/");
+            var resultado= numerosAOperar[0]/numerosAOperar[1];
+            return resultado.ToString();
+        }
         
         return Cadena;
     }
