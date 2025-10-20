@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🔵Si_multiplico_entre_un_numero_negativo_DEBE_retornar_su_resultado_en_negativoo">
-      <change afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" />
+    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🟢Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x">
+      <change afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +38,277 @@
   }
 }]]></component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="hace init de rama">
+      <option name="closed" value="true" />
+      <created>1760971125487</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760971125487</updated>
+    </task>
+    <task id="LOCAL-00002" summary="🟢Si_ingreso_vacio_DEBE_retornar_la_posicion_inicial_0_0_N">
+      <option name="closed" value="true" />
+      <created>1760973921034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760973921034</updated>
+    </task>
+    <task id="LOCAL-00003" summary="🔵Si_ingreso_vacio_DEBE_retornar_la_posicion_inicial_0_0_N">
+      <option name="closed" value="true" />
+      <created>1760974019463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974019463</updated>
+    </task>
+    <task id="LOCAL-00004" summary="🔴Si_ingreso_M_DEBE_avanzar_una_posicion_en_Y">
+      <option name="closed" value="true" />
+      <created>1760974130192</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974130192</updated>
+    </task>
+    <task id="LOCAL-00005" summary="🔴Si_ingreso_M_DEBE_avanzar_una_posicion_en_Y">
+      <option name="closed" value="true" />
+      <created>1760974138260</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974138260</updated>
+    </task>
+    <task id="LOCAL-00006" summary="🟢Si_ingreso_M_DEBE_avanzar_una_posicion_en_Y">
+      <option name="closed" value="true" />
+      <created>1760974170034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974170034</updated>
+    </task>
+    <task id="LOCAL-00007" summary="🔴Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones">
+      <option name="closed" value="true" />
+      <created>1760974249090</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974249090</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🟢Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones">
+      <option name="closed" value="true" />
+      <created>1760974356980</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974356980</updated>
+    </task>
+    <task id="LOCAL-00009" summary="🔴Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones">
+      <option name="closed" value="true" />
+      <created>1760974631406</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974631406</updated>
+    </task>
+    <task id="LOCAL-00010" summary="🟢Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones">
+      <option name="closed" value="true" />
+      <created>1760974654174</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760974654174</updated>
+    </task>
+    <task id="LOCAL-00011" summary="🔵Si_ingreso_solo_movimientos_DEBE_avanzar_las_mismas_casillas_del_movimiento_en_Y (Refactor tannto funcion CalcularPosicion como en pruebas repetidas)">
+      <option name="closed" value="true" />
+      <created>1760975288785</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760975288785</updated>
+    </task>
+    <task id="LOCAL-00012" summary="🔴Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este">
+      <option name="closed" value="true" />
+      <created>1760975742721</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1760975742721</updated>
+    </task>
+    <task id="LOCAL-00013" summary="🟢Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este">
+      <option name="closed" value="true" />
+      <created>1760975819599</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1760975819599</updated>
+    </task>
+    <task id="LOCAL-00014" summary="🔴Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur">
+      <option name="closed" value="true" />
+      <created>1760976015630</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760976015630</updated>
+    </task>
+    <task id="LOCAL-00015" summary="🟢Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur">
+      <option name="closed" value="true" />
+      <created>1760976262354</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1760976262354</updated>
+    </task>
+    <task id="LOCAL-00016" summary="🔴Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste">
+      <option name="closed" value="true" />
+      <created>1760977065196</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1760977065196</updated>
+    </task>
+    <task id="LOCAL-00017" summary="🟢Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste">
+      <option name="closed" value="true" />
+      <created>1760977117311</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1760977117311</updated>
+    </task>
+    <task id="LOCAL-00018" summary="🔵Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste">
+      <option name="closed" value="true" />
+      <created>1760977459731</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760977459731</updated>
+    </task>
+    <task id="LOCAL-00019" summary="🔴Si_ingreso_un_movimento_y_cuatro_giros_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_norte">
+      <option name="closed" value="true" />
+      <created>1760978030331</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760978030331</updated>
+    </task>
+    <task id="LOCAL-00020" summary="🟢Si_ingreso_un_movimento_y_cuatro_giros_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_norte">
+      <option name="closed" value="true" />
+      <created>1760978119365</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760978119365</updated>
+    </task>
+    <task id="LOCAL-00021" summary="🔴Si_ingreso_un_movimiento_y_un_giro_a_la_izquierda_DEBE_avanzar_un_movimieto_y_orientarse_al_oeste">
+      <option name="closed" value="true" />
+      <created>1760978469259</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1760978469259</updated>
+    </task>
+    <task id="LOCAL-00022" summary="🟢Si_ingreso_un_movimiento_y_un_giro_a_la_izquierda_DEBE_avanzar_un_movimieto_y_orientarse_al_oeste">
+      <option name="closed" value="true" />
+      <created>1760978955242</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760978955242</updated>
+    </task>
+    <task id="LOCAL-00023" summary="🔴Si_ingreso_un_movimiento_giro_a_la_derecha_y_otro_movimiento_DEBE_orientarse_al_este_y_avanzar_en_x_como_en_y">
+      <option name="closed" value="true" />
+      <created>1760979448533</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760979448533</updated>
+    </task>
+    <task id="LOCAL-00024" summary="🟢Si_ingreso_un_movimiento_giro_a_la_derecha_y_otro_movimiento_DEBE_orientarse_al_este_y_avanzar_en_x_como_en_y">
+      <option name="closed" value="true" />
+      <created>1760979589092</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1760979589092</updated>
+    </task>
+    <task id="LOCAL-00025" summary="🔴Si_ingreso_un_movimiento_giro_a_la_izquierda_y_otro_movimiento_DEBE_orientarse_al_oeste_y_disminuir_en_x_y_avanzar_en_y">
+      <option name="closed" value="true" />
+      <created>1760980170944</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1760980170944</updated>
+    </task>
+    <task id="LOCAL-00026" summary="🟢Si_ingreso_un_movimiento_giro_a_la_izquierda_y_otro_movimiento_DEBE_orientarse_al_oeste_y_disminuir_en_x_y_avanzar_en_y">
+      <option name="closed" value="true" />
+      <created>1760980249721</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1760980249721</updated>
+    </task>
+    <task id="LOCAL-00027" summary="🔵 Refactor (pruebas Si_solo_avanza_una_posicion_y_gira_n_veces_a_la_derecha_DEBE_mantener_el_primer_movimento_y_solo_cambiar_su_orientacion ) y en CalcularPosicion">
+      <option name="closed" value="true" />
+      <created>1760980593605</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1760980593605</updated>
+    </task>
+    <task id="LOCAL-00028" summary="🔴Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_x_mantenerse_en_y">
+      <option name="closed" value="true" />
+      <created>1760981060353</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1760981060353</updated>
+    </task>
+    <task id="LOCAL-00029" summary="🔴 (se corrige nombre de prueba  ya que esta mal Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x">
+      <option name="closed" value="true" />
+      <created>1760981210836</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1760981210836</updated>
+    </task>
+    <task id="LOCAL-00030" summary="🟢Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x">
+      <option name="closed" value="true" />
+      <created>1760981255922</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1760981255922</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Si_ingreso_M_DEBE_avanzar_una_posicion_en_Y" />
+    <MESSAGE value="Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones" />
+    <MESSAGE value="Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones" />
+    <MESSAGE value="Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones" />
+    <MESSAGE value="Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones" />
+    <MESSAGE value="Si_ingreso_solo_movimientos_DEBE_avanzar_las_mismas_casillas_del_movimiento_en_Y (Refactor tannto funcion CalcularPosicion como en pruebas repetidas)" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
+    <MESSAGE value="Si_ingreso_un_movimento_y_cuatro_giros_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_norte" />
+    <MESSAGE value="Si_ingreso_un_movimento_y_cuatro_giros_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_norte" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_izquierda_DEBE_avanzar_un_movimieto_y_orientarse_al_oeste" />
+    <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_izquierda_DEBE_avanzar_un_movimieto_y_orientarse_al_oeste" />
+    <MESSAGE value="Si_ingreso_un_movimiento_giro_a_la_derecha_y_otro_movimiento_DEBE_orientarse_al_este_y_avanzar_en_x_como_en_y" />
+    <MESSAGE value="Si_ingreso_un_movimiento_giro_a_la_derecha_y_otro_movimiento_DEBE_orientarse_al_este_y_avanzar_en_x_como_en_y" />
+    <MESSAGE value="Si_ingreso_un_movimiento_giro_a_la_izquierda_y_otro_movimiento_DEBE_orientarse_al_oeste_y_disminuir_en_x_y_avanzar_en_y" />
+    <MESSAGE value="Si_ingreso_un_movimiento_giro_a_la_izquierda_y_otro_movimiento_DEBE_orientarse_al_oeste_y_disminuir_en_x_y_avanzar_en_y" />
+    <MESSAGE value=" Refactor (pruebas Si_solo_avanza_una_posicion_y_gira_n_veces_a_la_derecha_DEBE_mantener_el_primer_movimento_y_solo_cambiar_su_orientacion ) y en CalcularPosicion" />
+    <MESSAGE value="Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_x_mantenerse_en_y" />
+    <MESSAGE value=" (se corrige nombre de prueba  ya que esta mal Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x" />
+    <MESSAGE value="Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x" />
+  </component>
 </project>
