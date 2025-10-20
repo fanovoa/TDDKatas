@@ -12,6 +12,14 @@ public class MarsRoverTests
         posicionFinal.Should().Be("0:0:N");
     }
 
+    [Fact]
+    public void Si_ingreso_M_DEBE_avanzar_una_posicion_en_Y()
+    {
+        var comando = "M";
+        var posicionFinal = CalcularPosicion(comando);
+        posicionFinal.Should().Be("0:1:N");
+    }
+
     private object CalcularPosicion(string comando)
     {
         if( string.IsNullOrWhiteSpace(comando))
