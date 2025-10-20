@@ -73,7 +73,11 @@ public class MarsRoverTests
         
         foreach (var comando in comandos.ToCharArray())
         {
-            if (comando == 'M') posicion_Y++;
+            if (comando == 'M')
+            {
+                if (orientacion[orientacion_inicial] == 'E') posicion_X++;
+                else posicion_Y++;
+            }
             if (comando == 'R') orientacion_inicial++;
             if (comando == 'L') orientacion_inicial--;
             
