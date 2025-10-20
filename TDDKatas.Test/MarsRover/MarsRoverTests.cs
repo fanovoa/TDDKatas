@@ -43,6 +43,7 @@ public class MarsRoverTests
         
         if(comando== "M") return "0:1:N";
         if(comando== "MM") return "0:2:N";
+        if(comando== "MMM") return "0:3:N";
 
         return "0:0:N";
     }
