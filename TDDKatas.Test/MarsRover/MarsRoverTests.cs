@@ -23,7 +23,7 @@ public class MarsRoverTests
     [Fact]
     public void Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones()
     {
-        var comando = "M";
+        var comando = "MM";
         var posicionFinal = CalcularPosicion(comando);
         posicionFinal.Should().Be("0:2:N");
     }
@@ -32,6 +32,10 @@ public class MarsRoverTests
     {
         if( string.IsNullOrWhiteSpace(comando))
             return "0:0:N";
-        return "0:1:N";
+        
+        if(comando== "M") return "0:1:N";
+        if(comando== "MM") return "0:2:N";
+
+        return "0:0:N";
     }
 }
