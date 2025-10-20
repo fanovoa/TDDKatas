@@ -30,6 +30,13 @@ public class MarsRoverTests
         posicionFinal.Should().Be("0:1:E");
     }
 
+    [Fact]
+    public void Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur()
+    {
+        var posicionFinal = CalcularPosicion("MRR");
+        posicionFinal.Should().Be("0:1:S");
+    }
+
     private string CalcularPosicion(string comandos)
     {
         int posicion_X = 0;
