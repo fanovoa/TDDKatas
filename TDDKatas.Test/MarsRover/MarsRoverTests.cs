@@ -112,4 +112,13 @@ public class MarsRoverTests
         //assert
         posicionFinal.Should().Be("COMANDO INVALIDO");
     }
+   [Fact] 
+    public void Si_SuperaLimite_de_plataforma_en_negativo_DEBE_volver_a_cero_la_posicion_superada()
+    {
+        var marsRover = new MarsRover();
+        //act
+        var posicionFinal = marsRover.CalcularPosicion("LLMMMMMMMMMMM");
+        //assert
+        posicionFinal.Should().Be("0:0:N");
+    }
 }
