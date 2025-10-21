@@ -1,45 +1,68 @@
 ﻿namespace TDDKatas.MarsRover;
 
+public enum Orientacion
+{
+    N=0,
+    E=1,
+    S=2,
+    W=3
+}
 public class MarsRover
 {
+    public int Posicion_X { get; private set; }
+    public int Posicion_Y { get; private set; }
+    public Orientacion Orientacion { get; private set; }
+
+    private readonly int _width;
+    private readonly int _height;
+
+    public MarsRover()
+    {
+        Posicion_X = 0;
+        Posicion_Y = 0;
+        _width = 10;
+        _height = 10;
+        Orientacion = Orientacion.N;
+
+    }
     public string CalcularPosicion(string comandos)
     {
-        int posicion_X = 0;
-        int posicion_Y = 0;
-        int orientacion_inicial = 0;
-        char[] orientacion = ['N','E','S','W'];
         
         foreach (var comando in comandos.ToCharArray())
         {
-            if (comando == 'M')
+            switch (comando)
             {
-                switch (orientacion[orientacion_inicial])
-                {
-                    case 'E':
-                        posicion_X++;
-                        break;
-                    case 'W':
-                        posicion_X--;
-                        break;
-                    case 'S':
-                        posicion_Y--;
-                        break;
-                    default:
-                        posicion_Y++;
-                        break;
-                }
+                case 'M': Mover(); break;
+                case 'R': GirarAlaDerecha(); break;
+                case 'L': GirarAlaIzquierda(); break;
             }
-            if (comando == 'R') orientacion_inicial++;
-            if (comando == 'L') orientacion_inicial--;
-            
-            if(orientacion_inicial >3 ) orientacion_inicial = 0;
-            if (orientacion_inicial <0 ) orientacion_inicial = 3;
-            if (posicion_Y > 10) posicion_Y = 0;
-            if (posicion_X > 10) posicion_X = 0;
 
+            ReiniciaPosicion(Posicion_X > _width, Posicion_Y > _height);
         }
         
-        return string.Concat(posicion_X,":", posicion_Y,":",orientacion[orientacion_inicial]);
+        return string.Concat(Posicion_X,":", Posicion_Y,":",Orientacion);
         
     }
+
+    private void ReiniciaPosicion(bool reiniciaX, bool reiniciaY)
+    {
+        if (reiniciaX) Posicion_X = 0;
+        if (reiniciaY) Posicion_Y = 0 ;
+    }
+
+    private void Mover()
+    {
+        switch (Orientacion)
+        {
+            case Orientacion.E: Posicion_X++; break;
+            case Orientacion.W: Posicion_X--; break;
+            case Orientacion.S: Posicion_Y--; break;
+            case Orientacion.N: Posicion_Y++; break;
+            default: throw new ArgumentOutOfRangeException();
+        }
+    }
+
+    private void GirarAlaIzquierda() => Orientacion = (((int)Orientacion)+1) < 3 ?  Orientacion.W:(Orientacion)(((int)Orientacion)-1);
+    private void GirarAlaDerecha()=> Orientacion = (((int)Orientacion)+1) > 3 ?  Orientacion.N:(Orientacion)(((int)Orientacion)+1);
+    
 }

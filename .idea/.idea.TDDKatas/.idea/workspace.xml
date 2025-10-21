@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🟢Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x">
-      <change afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" afterDir="false" />
+    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🟢Si_supera_10_en_y_DEBE_volver_a_0">
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,17 +277,52 @@
       <option name="project" value="LOCAL" />
       <updated>1760981255922</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="🔵 Refactor. (se crea archivo Clase MarsRover)">
+      <option name="closed" value="true" />
+      <created>1760981897648</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1760981897648</updated>
+    </task>
+    <task id="LOCAL-00032" summary="🔴Si_supera_10_en_x_DEBE_volver_a_0">
+      <option name="closed" value="true" />
+      <created>1761001237163</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1761001237163</updated>
+    </task>
+    <task id="LOCAL-00033" summary="🟢Si_supera_10_en_x_DEBE_volver_a_0">
+      <option name="closed" value="true" />
+      <created>1761001322901</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1761001322901</updated>
+    </task>
+    <task id="LOCAL-00034" summary="🔴Si_supera_10_en_y_DEBE_volver_a_0">
+      <option name="closed" value="true" />
+      <created>1761001412263</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1761001412263</updated>
+    </task>
+    <task id="LOCAL-00035" summary="🟢Si_supera_10_en_y_DEBE_volver_a_0">
+      <option name="closed" value="true" />
+      <created>1761001475914</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1761001475914</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_ingreso_M_DEBE_avanzar_una_posicion_en_Y" />
-    <MESSAGE value="Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones" />
-    <MESSAGE value="Si_avanzo_ingreso_dos_movimientos_DEBE_avanzar_dos_posiciones" />
-    <MESSAGE value="Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones" />
-    <MESSAGE value="Si_ingreso_tres_movimientos_DEBE_avanzar_tres_posiciones" />
     <MESSAGE value="Si_ingreso_solo_movimientos_DEBE_avanzar_las_mismas_casillas_del_movimiento_en_Y (Refactor tannto funcion CalcularPosicion como en pruebas repetidas)" />
     <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este" />
     <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este" />
@@ -309,6 +343,11 @@
     <MESSAGE value="Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_x_mantenerse_en_y" />
     <MESSAGE value=" (se corrige nombre de prueba  ya que esta mal Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x" />
     <MESSAGE value="Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_se_oriente_a_sur_y_avanza_n_posiciones_DEBE_disminuir_en_y_mantenerse_en_x" />
+    <MESSAGE value=" Refactor. (se crea archivo Clase MarsRover)" />
+    <MESSAGE value="Si_supera_10_en_x_DEBE_volver_a_0" />
+    <MESSAGE value="Si_supera_10_en_x_DEBE_volver_a_0" />
+    <MESSAGE value="Si_supera_10_en_y_DEBE_volver_a_0" />
+    <MESSAGE value="Si_supera_10_en_y_DEBE_volver_a_0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_supera_10_en_y_DEBE_volver_a_0" />
   </component>
 </project>
