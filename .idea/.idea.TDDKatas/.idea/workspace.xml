@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🔵Refactor Coreccion">
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" afterDir="false" />
+    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🔴Si_SuperaLimite_de_plataforma_en_negativo_DEBE_volver_a_cero_la_posicion_superada">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,13 +377,20 @@
       <option name="project" value="LOCAL" />
       <updated>1761006830785</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="🔴Si_SuperaLimite_de_plataforma_en_negativo_DEBE_volver_a_cero_la_posicion_superada">
+      <option name="closed" value="true" />
+      <created>1761007262952</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1761007262952</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
     <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
     <MESSAGE value="Si_ingreso_un_movimento_y_cuatro_giros_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_norte" />
     <MESSAGE value="Si_ingreso_un_movimento_y_cuatro_giros_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_norte" />
@@ -407,6 +415,26 @@
     <MESSAGE value="Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido" />
     <MESSAGE value="Refactor final" />
     <MESSAGE value="Refactor Coreccion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Coreccion" />
+    <MESSAGE value="Si_SuperaLimite_de_plataforma_en_negativo_DEBE_volver_a_cero_la_posicion_superada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_SuperaLimite_de_plataforma_en_negativo_DEBE_volver_a_cero_la_posicion_superada" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\MarsRover\MarsRover.cs" containingFunctionPresentation="Method 'CalcularPosicion'">
+            <startOffsets>
+              <option value="923" />
+            </startOffsets>
+            <endOffsets>
+              <option value="976" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

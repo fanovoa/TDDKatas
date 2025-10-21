@@ -37,7 +37,9 @@ public class MarsRover
                 case 'L': GirarAlaIzquierda(); break;
             }
 
-            ReiniciaPosicion(Posicion_X > _width, Posicion_Y > _height);
+            var superaPlataformaEnX = Math.Abs(Posicion_X ) > _width ;
+            var superaPlataformaEnY =  Math.Abs(Posicion_Y ) > _height;
+            ReiniciaPosicion(superaPlataformaEnX , superaPlataformaEnY);
         }
         
         return PosicionFinaldelRover();
