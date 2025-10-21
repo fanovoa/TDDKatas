@@ -27,7 +27,7 @@ public class MarsRover
     }
     public string CalcularPosicion(string comandos)
     {
-        
+        if (comandos.Any(comando => comando != 'R' && comando != 'M' && comando != 'L')) return "COMANDO INVALIDO";
         foreach (var comando in comandos.ToCharArray())
         {
             switch (comando)
