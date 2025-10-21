@@ -89,27 +89,17 @@ public class MarsRoverTests
         //assert
         posicionFinal.Should().Be("0:-1:S");
     }
-
-    [Fact]
-    public void  Si_supera_10_en_x_DEBE_volver_a_0()
+    
+    [Theory]
+    [InlineData("MRMMMMMMMMMMM","0:1:E")]
+    [InlineData("MMMMMMMMMMM","0:0:N")]
+    public void Si_SuperaLimite_de_plataforma_DEBE_volver_a_cero_la_posicion_superada(string comando, string esperado)
     {
-        //arrange
         var marsRover = new MarsRover();
         //act
-        var posicionFinal = marsRover.CalcularPosicion("MMMMMMMMMMM");
+        var posicionFinal = marsRover.CalcularPosicion(comando);
         //assert
-        posicionFinal.Should().Be("0:0:N");
-    }
-
-    [Fact]
-    public void Si_supera_10_en_y_DEBE_volver_a_0()
-    {
-        //arrange
-        var marsRover = new MarsRover();
-        //act
-        var posicionFinal = marsRover.CalcularPosicion("MRMMMMMMMMMMM");
-        //assert
-        posicionFinal.Should().Be("0:1:E");
+        posicionFinal.Should().Be(esperado);
     }
 
     [Fact]
