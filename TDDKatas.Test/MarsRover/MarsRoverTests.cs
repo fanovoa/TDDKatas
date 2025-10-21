@@ -111,4 +111,15 @@ public class MarsRoverTests
         //assert
         posicionFinal.Should().Be("0:1:E");
     }
+
+    [Fact]
+    public void Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido()
+    {
+        //arrange
+        var marsRover = new MarsRover();
+        //act
+        var posicionFinal = marsRover.CalcularPosicion("V");
+        //assert
+        posicionFinal.Should().Be("COMANDO INVALIDO");
+    }
 }
