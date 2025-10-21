@@ -40,8 +40,12 @@ public class MarsRover
             ReiniciaPosicion(Posicion_X > _width, Posicion_Y > _height);
         }
         
-        return string.Concat(Posicion_X,":", Posicion_Y,":",Orientacion);
+        return PosicionFinaldelRover();
         
+    }
+    private string PosicionFinaldelRover()
+    {
+        return string.Concat(Posicion_X,":", Posicion_Y,":",Orientacion);
     }
 
     private void ReiniciaPosicion(bool reiniciaX, bool reiniciaY)
