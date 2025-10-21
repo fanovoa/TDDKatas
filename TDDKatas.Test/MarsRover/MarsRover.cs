@@ -28,7 +28,7 @@ public class MarsRover
     public string CalcularPosicion(string comandos)
     {
         if (comandos.Any(comando => !"RML".Contains(comando))) return "COMANDO INVALIDO";
-        foreach (var comando in comandos.ToCharArray())
+        foreach (var comando in comandos)
         {
             switch (comando)
             {
@@ -66,7 +66,7 @@ public class MarsRover
         }
     }
 
-    private void GirarAlaIzquierda() => Orientacion = (((int)Orientacion)+1) < 3 ?  Orientacion.W:(Orientacion)(((int)Orientacion)-1);
+    private void GirarAlaIzquierda() => Orientacion = (((int)Orientacion)-1) < 0 ?  Orientacion.W:(Orientacion)(((int)Orientacion)-1);
     private void GirarAlaDerecha()=> Orientacion = (((int)Orientacion)+1) > 3 ?  Orientacion.N:(Orientacion)(((int)Orientacion)+1);
     
 }

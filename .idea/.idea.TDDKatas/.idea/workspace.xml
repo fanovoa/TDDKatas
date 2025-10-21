@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🟢Si_supera_10_en_y_DEBE_volver_a_0">
+    <list default="true" id="7849674c-b123-4e97-b331-c6572099498b" name="Changes" comment="🔵Refactor final">
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +24,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e14a4e27990972fa4ae94975603bd298aaf328ee083c03b10569ee4724d57/TestInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/MarsRover/MarsRover.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRoverTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "b6f66bea-51e6-407a-bd0f-8f19c9943739.executor": "Debug",
     "git-widget-placeholder": "MarsRover",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -317,17 +319,60 @@
       <option name="project" value="LOCAL" />
       <updated>1761001475914</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="🔵 Refactor Clase y Pruebas">
+      <option name="closed" value="true" />
+      <created>1761005359012</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1761005359014</updated>
+    </task>
+    <task id="LOCAL-00037" summary="🔴Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido">
+      <option name="closed" value="true" />
+      <created>1761005454068</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1761005454068</updated>
+    </task>
+    <task id="LOCAL-00038" summary="🟢Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido">
+      <option name="closed" value="true" />
+      <created>1761005656015</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1761005656015</updated>
+    </task>
+    <task id="LOCAL-00039" summary="🔵Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido">
+      <option name="closed" value="true" />
+      <created>1761006095792</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006095792</updated>
+    </task>
+    <task id="LOCAL-00040" summary="🔵Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido">
+      <option name="closed" value="true" />
+      <created>1761006115510</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006115510</updated>
+    </task>
+    <task id="LOCAL-00041" summary="🔵Refactor final">
+      <option name="closed" value="true" />
+      <created>1761006225707</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006225707</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Si_ingreso_solo_movimientos_DEBE_avanzar_las_mismas_casillas_del_movimiento_en_Y (Refactor tannto funcion CalcularPosicion como en pruebas repetidas)" />
-    <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este" />
-    <MESSAGE value="Si_ingreso_un_movimiento_y_un_giro_a_la_derecha_DEBE_avanzar_un_movimiento_y_orientarse_al_este" />
-    <MESSAGE value="Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur" />
-    <MESSAGE value="Si_ingreso_un_movimiento_y_dos_gitos_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_sur" />
     <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
     <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
     <MESSAGE value="Si_ingreso_un_movimiento_y_tres_giros_a_la_derecha_DEBE_avanzar_dos_movimientos_y_orientarse_al_oeste" />
@@ -348,6 +393,30 @@
     <MESSAGE value="Si_supera_10_en_x_DEBE_volver_a_0" />
     <MESSAGE value="Si_supera_10_en_y_DEBE_volver_a_0" />
     <MESSAGE value="Si_supera_10_en_y_DEBE_volver_a_0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_supera_10_en_y_DEBE_volver_a_0" />
+    <MESSAGE value=" Refactor Clase y Pruebas" />
+    <MESSAGE value="Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido" />
+    <MESSAGE value="Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido" />
+    <MESSAGE value="Si_Ingresa_un_comando_distinto_a_M_L_R_DEBE_retornar_ComandoInvalido" />
+    <MESSAGE value="Refactor final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor final" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/MarsRover/MarsRover.cs</url>
+          <line>68</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\MarsRover\MarsRover.cs" containingFunctionPresentation="Method 'GirarAlaIzquierda'">
+            <startOffsets>
+              <option value="1761" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1854" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
