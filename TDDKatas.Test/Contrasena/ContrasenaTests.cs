@@ -29,4 +29,12 @@ public class ContrasenaTests
         var validar = contrasena.esValida();
         validar.Should().Be(false);
     }
+
+    [Fact]
+    public void Si_LaContrasenaNoTieneNumeros_DEBE_RetornarFalse()
+    {
+        var contrasena = new Validador("ASDFVASDaed");
+        var validar = contrasena.esValida();
+        validar.Should().Be(false);
+    }
 }
