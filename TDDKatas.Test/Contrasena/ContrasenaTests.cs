@@ -14,6 +14,16 @@ public class ContrasenaTests
         validar.Should().Be(false);
     }
 
+    [Fact]
+    public void Si_LaContrasenaNoTieneMayusculas_DEBE_RetornarFalse()
+    {
+        var contrasena = "abcfgdfgdfs";
+
+        var validar = esValida(contrasena);
+
+        validar.Should().Be(false);
+    }
+
     private bool esValida(string contrasena)
     {
         if (contrasena.Length < 9) return false;
