@@ -9,13 +9,15 @@ public class ContrasenaTests
     {
         var contrasena = "123";
 
-        var validar = esValida();
+        var validar = esValida(contrasena);
 
         validar.Should().Be(false);
     }
 
-    private object esValida()
+    private bool esValida(string contrasena)
     {
-        return false;
+        if (contrasena.Length < 9) return false;
+
+        return true;
     }
 }
