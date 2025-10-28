@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8124a1cc-3bbf-4c44-a357-9cdcedc763fa" name="Changes" comment="🔵 independecia de responsabilidad para la validacion en los metodos">
+    <list default="true" id="8124a1cc-3bbf-4c44-a357-9cdcedc763fa" name="Changes" comment="🔵 se crean reglas como fields">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +16,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e14a4e27990972fa4ae94975603bd298aaf328ee083c03b10569ee4724d57/TestInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
@@ -139,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761617030320</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="🔵 se crean reglas como fields">
+      <option name="closed" value="true" />
+      <created>1761617810163</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1761617810163</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -158,25 +165,7 @@
     <MESSAGE value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
     <MESSAGE value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
     <MESSAGE value=" independecia de responsabilidad para la validacion en los metodos" />
-    <option name="LAST_COMMIT_MESSAGE" value=" independecia de responsabilidad para la validacion en los metodos" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Contrasena\Validador.cs" containingFunctionPresentation="Method 'EsValida'">
-            <startOffsets>
-              <option value="601" />
-            </startOffsets>
-            <endOffsets>
-              <option value="787" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value=" se crean reglas como fields" />
+    <option name="LAST_COMMIT_MESSAGE" value=" se crean reglas como fields" />
   </component>
 </project>

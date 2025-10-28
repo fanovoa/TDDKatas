@@ -54,5 +54,12 @@ public class ContrasenaTests
         validar.Should().Be(true);
     }
 
+    [Fact]
+    public void SiLaContrasenaContieneMenos16Caracteres_DEBE_RetornarFalse()
+    {
+        var contrasena = new Validador("Aa12_43qwea");
+        var validar = contrasena.EsValida();
+        validar.Should().Be(false);
+    }
 
 }
