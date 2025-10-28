@@ -27,7 +27,8 @@ public class ContrasenaTests
     private bool esValida(string contrasena)
     {
         if (contrasena.Length < 9) return false;
-
+        if (contrasena.Count(char.IsUpper) ==0) return false;
         return true;
+
     }
 }
