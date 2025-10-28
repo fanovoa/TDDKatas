@@ -16,6 +16,6 @@ public class ContrasenaTests
 
     private object esValida()
     {
-        throw new NotImplementedException();
+        return false;
     }
 }
