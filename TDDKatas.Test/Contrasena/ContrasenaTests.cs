@@ -38,6 +38,7 @@ public class ContrasenaTests
     {
         if (contrasena.Length < 9) return false;
         if (contrasena.Count(char.IsUpper) ==0) return false;
+        if (contrasena.Count(char.IsLower) ==0) return false;
         return true;
 
     }
