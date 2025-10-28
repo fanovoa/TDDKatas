@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8124a1cc-3bbf-4c44-a357-9cdcedc763fa" name="Changes" comment="🔵SI_LaContrasenaTieneMasDe8Caracteres_DEBE_retornar_true">
-      <change afterPath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" />
+    <list default="true" id="8124a1cc-3bbf-4c44-a357-9cdcedc763fa" name="Changes" comment="💚Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,17 +22,132 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Contrasena/ContrasenaTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Contrasena/ContrasenaTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Contrasena/Validador.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "ValidadorContrasena"
+    "git-widget-placeholder": "ValidadorContrasena",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="🔴Si_LaContrasenaContieneMenosDe8Caracteres_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761614433904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761614433904</updated>
+    </task>
+    <task id="LOCAL-00002" summary="💚Si_LaContrasenaContieneMenosDe8Caracteres_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761614463643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761614463643</updated>
+    </task>
+    <task id="LOCAL-00003" summary="🔵Si_LaContrasenaContieneMenosDe8Caracteres_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761614519959</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761614519959</updated>
+    </task>
+    <task id="LOCAL-00004" summary="🔴Si_LaContrasenaNoTieneMayusculas_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761614620038</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761614620038</updated>
+    </task>
+    <task id="LOCAL-00005" summary="💚Si_LaContrasenaNoTieneMayusculas_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761614723778</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761614723778</updated>
+    </task>
+    <task id="LOCAL-00006" summary="🔴Si_LaContrasenaNoTieneMinusculas_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761614786413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761614786413</updated>
+    </task>
+    <task id="LOCAL-00007" summary="💚Si_LaContrasenaNoTieneMinusculas_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761614818136</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1761614818136</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🔵 clase para validacion de contraseña">
+      <option name="closed" value="true" />
+      <created>1761615242451</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761615242451</updated>
+    </task>
+    <task id="LOCAL-00009" summary="🔴Si_LaContrasenaNoTieneNumeros_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761615294130</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761615294130</updated>
+    </task>
+    <task id="LOCAL-00010" summary="💚Si_LaContrasenaNoTieneNumeros_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761615341522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761615341522</updated>
+    </task>
+    <task id="LOCAL-00011" summary="🔴Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761615450138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761615450138</updated>
+    </task>
+    <task id="LOCAL-00012" summary="💚Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse">
+      <option name="closed" value="true" />
+      <created>1761615587221</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761615587221</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Si_LaContrasenaContieneMenosDe8Caracteres_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaContieneMenosDe8Caracteres_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaContieneMenosDe8Caracteres_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaNoTieneMayusculas_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaNoTieneMayusculas_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaNoTieneMinusculas_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaNoTieneMinusculas_DEBE_RetornarFalse" />
+    <MESSAGE value=" clase para validacion de contraseña" />
+    <MESSAGE value="Si_LaContrasenaNoTieneNumeros_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaNoTieneNumeros_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
+    <MESSAGE value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
+  </component>
 </project>

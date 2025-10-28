@@ -8,14 +8,37 @@ public class Validador
     {
         _contrasena = contrasena;
     }
-    public bool esValida()
+    public bool EsValida()
     {
-        if (_contrasena.Length < 9) return false;
-        if (_contrasena.Count(char.IsUpper) ==0) return false;
-        if (_contrasena.Count(char.IsDigit) == 0) return false;
-        if (_contrasena.Count(char.IsLower) == 0) return false;
-        if (!_contrasena.Contains('-') ) return false;
+        return    ContieneCaracteresMinimos()
+               && ContieneMayusculas()
+               && ContieneNumeros()
+               && ContieneMinusculas()
+               && ContieneGuion();
+    }
 
-        return true;
+    private bool ContieneGuion()
+    {
+        return _contrasena.Contains('_');
+    }
+
+    private bool ContieneMinusculas()
+    {
+        return _contrasena.Count(char.IsLower) == 0;
+    }
+
+    private bool ContieneNumeros()
+    {
+        return _contrasena.Count(char.IsDigit) == 0;
+    }
+
+    private bool ContieneMayusculas()
+    {
+        return _contrasena.Count(char.IsUpper) >0;
+    }
+
+    private bool ContieneCaracteresMinimos()
+    {
+        return _contrasena.Length > 9;
     }
 }
