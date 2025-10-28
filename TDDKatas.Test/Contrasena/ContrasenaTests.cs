@@ -46,5 +46,13 @@ public class ContrasenaTests
         validar.Should().Be(false);
     }
 
+    [Fact]
+    public void Si_LaContrasenaEsValida_DEBE_RetornarTrue()
+    {
+        var contrasena = new Validador("Aa12_43qwea");
+        var validar = contrasena.EsValida();
+        validar.Should().Be(true);
+    }
+
 
 }

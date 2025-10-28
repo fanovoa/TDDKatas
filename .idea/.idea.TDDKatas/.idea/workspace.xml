@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8124a1cc-3bbf-4c44-a357-9cdcedc763fa" name="Changes" comment="💚Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse">
+    <list default="true" id="8124a1cc-3bbf-4c44-a357-9cdcedc763fa" name="Changes" comment="🔵 independecia de responsabilidad para la validacion en los metodos">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/ContrasenaTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs" afterDir="false" />
@@ -29,6 +29,7 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "b6f66bea-51e6-407a-bd0f-8f19c9943739.executor": "Debug",
     "git-widget-placeholder": "ValidadorContrasena",
     "node.js.selected.package.tslint": "(autodetect)"
   }
@@ -130,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761615587221</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="🔵 independecia de responsabilidad para la validacion en los metodos">
+      <option name="closed" value="true" />
+      <created>1761617030320</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761617030320</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -148,6 +157,26 @@
     <MESSAGE value="Si_LaContrasenaNoTieneNumeros_DEBE_RetornarFalse" />
     <MESSAGE value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
     <MESSAGE value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse" />
+    <MESSAGE value=" independecia de responsabilidad para la validacion en los metodos" />
+    <option name="LAST_COMMIT_MESSAGE" value=" independecia de responsabilidad para la validacion en los metodos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TDDKatas.Test/Contrasena/Validador.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\victor.novoa\RiderProjects\TDDKatas\TDDKatas.Test\Contrasena\Validador.cs" containingFunctionPresentation="Method 'EsValida'">
+            <startOffsets>
+              <option value="601" />
+            </startOffsets>
+            <endOffsets>
+              <option value="787" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
