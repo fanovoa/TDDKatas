@@ -37,4 +37,12 @@ public class ContrasenaTests
         var validar = contrasena.esValida();
         validar.Should().Be(false);
     }
+
+    [Fact]
+    public void Si_LaContrasenaNoTieneGuiones_DEBE_RetornarFalse()
+    {
+        var contrasena = new Validador("ASDFVASD2aed_");
+        var validar = contrasena.esValida();
+        validar.Should().Be(false);
+    }
 }
