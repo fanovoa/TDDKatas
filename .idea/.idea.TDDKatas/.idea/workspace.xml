@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚SiRetira4_Debe_Regresar2de2">
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Palindromos/PalindromosTest.cs" beforeDir="false" />
+    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚 SiRetira6_Debe_Regresar1de5y1de1">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +21,163 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e14a4e27990972fa4ae94975603bd298aaf328ee083c03b10569ee4724d57/TestInvoker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/CajeroTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Contrasena/Validador.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "CajeroAutomatico"
+    "85b4540a-c696-4000-929d-8bccf60d9afc.executor": "Debug",
+    "git-widget-placeholder": "CajeroAutomatico",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Limpieza de codigo">
+      <option name="closed" value="true" />
+      <created>1762220552569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220552569</updated>
+    </task>
+    <task id="LOCAL-00002" summary="🔴SiRetira1_Debe_Regresar1de1">
+      <option name="closed" value="true" />
+      <created>1762220672522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220672522</updated>
+    </task>
+    <task id="LOCAL-00003" summary="💚SiRetira1_Debe_Regresar1de1">
+      <option name="closed" value="true" />
+      <created>1762220749210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220749210</updated>
+    </task>
+    <task id="LOCAL-00004" summary="🔴SiRetira2_Debe_Regresar1de2">
+      <option name="closed" value="true" />
+      <created>1762220772592</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220772592</updated>
+    </task>
+    <task id="LOCAL-00005" summary="🔴SiRetira2_Debe_Regresar1de2">
+      <option name="closed" value="true" />
+      <created>1762220804348</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220804348</updated>
+    </task>
+    <task id="LOCAL-00006" summary="💚SiRetira2_Debe_Regresar1de2">
+      <option name="closed" value="true" />
+      <created>1762220835448</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220835448</updated>
+    </task>
+    <task id="LOCAL-00007" summary="🔵re nombrar variable del meotodo retirar para que sea mas diciente">
+      <option name="closed" value="true" />
+      <created>1762220877104</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220877104</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🔴SiRetira4_Debe_Regresar2de2">
+      <option name="closed" value="true" />
+      <created>1762220896928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220896928</updated>
+    </task>
+    <task id="LOCAL-00009" summary="💚 SiRetira4_Debe_Regresar2de2">
+      <option name="closed" value="true" />
+      <created>1762220925536</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762220925536</updated>
+    </task>
+    <task id="LOCAL-00010" summary="🔵 Se cambia el cuerpo del metodo retirar para ver mas claro un patron">
+      <option name="closed" value="true" />
+      <created>1762221255912</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762221255912</updated>
+    </task>
+    <task id="LOCAL-00011" summary="🔴SiRetira5_Debe_Regresar1de5">
+      <option name="closed" value="true" />
+      <created>1762221323407</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1762221323407</updated>
+    </task>
+    <task id="LOCAL-00012" summary="💚 SiRetira5_Debe_Regresar1de5">
+      <option name="closed" value="true" />
+      <created>1762221355786</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762221355786</updated>
+    </task>
+    <task id="LOCAL-00013" summary="🔵 Se realiza ajustes para monedas o valores de 1 y 2">
+      <option name="closed" value="true" />
+      <created>1762222076564</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1762222076564</updated>
+    </task>
+    <task id="LOCAL-00014" summary="🔴 SiRetira6_Debe_Regresar1de5y1de1">
+      <option name="closed" value="true" />
+      <created>1762222120875</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1762222120875</updated>
+    </task>
+    <task id="LOCAL-00015" summary="💚 SiRetira6_Debe_Regresar1de5y1de1">
+      <option name="closed" value="true" />
+      <created>1762222215015</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762222215015</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Limpieza de codigo" />
+    <MESSAGE value="SiRetira1_Debe_Regresar1de1" />
+    <MESSAGE value="SiRetira1_Debe_Regresar1de1" />
+    <MESSAGE value="SiRetira2_Debe_Regresar1de2" />
+    <MESSAGE value="SiRetira2_Debe_Regresar1de2" />
+    <MESSAGE value="re nombrar variable del meotodo retirar para que sea mas diciente" />
+    <MESSAGE value="SiRetira4_Debe_Regresar2de2" />
+    <MESSAGE value=" SiRetira4_Debe_Regresar2de2" />
+    <MESSAGE value=" Se cambia el cuerpo del metodo retirar para ver mas claro un patron" />
+    <MESSAGE value="SiRetira5_Debe_Regresar1de5" />
+    <MESSAGE value=" SiRetira5_Debe_Regresar1de5" />
+    <MESSAGE value=" Se realiza ajustes para monedas o valores de 1 y 2" />
+    <MESSAGE value=" SiRetira6_Debe_Regresar1de5y1de1" />
+    <MESSAGE value=" SiRetira6_Debe_Regresar1de5y1de1" />
+    <option name="LAST_COMMIT_MESSAGE" value=" SiRetira6_Debe_Regresar1de5y1de1" />
+  </component>
 </project>

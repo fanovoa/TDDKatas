@@ -47,36 +47,24 @@ public class CajeroTests
 
 public class Cajero
 {
+    private static List<(int,string)> _Denominaciones = [(5,"billete"), (2,"moneda"), (1,"moneda")];
+
     public List<(int,int)> Retirar(int cantidad)
     {
         var dinero = new List<(int, int)>();
 
-        var cantidadDeDinero = cantidad / 2;
-        
-        if (cantidad == 5)
-        {
-            dinero.Add((1, 5));
-            return dinero;
-        }
 
-        if (cantidad > 5)
+        foreach (var denominacion in _Denominaciones)
         {
-            dinero.Add((1,5));
-            dinero.Add((1,1));
-            return dinero;
-        }
-
-        if (cantidadDeDinero > 0)
-        {
-            dinero.Add((cantidadDeDinero,2));
-            cantidad -= ( cantidadDeDinero * 2);
+            var cantidadDeDinero = cantidad / denominacion.Item1;
+            if (cantidadDeDinero >0 )
+            {
+                dinero.Add((cantidadDeDinero,denominacion.Item1));
+                cantidad -= ( cantidadDeDinero * denominacion.Item1);
+            }
             
         }
         
-        if (cantidad >0)
-        {
-            dinero.Add((1,cantidad));
-        }
         return dinero;
     }
 }
