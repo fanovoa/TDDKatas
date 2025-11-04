@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="🔵 se combinan a las pruebas de las denominaciones inexactas y que necesitan una combinacion para retiro de 4 y 6">
+    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="🔵 Se devuelve una lista de lectura para no violar el principio de encapsulamiento y que la lista pueda ser modificada,&#10;se da nombre a la los atributos de la lista de denominaciones para que sean mas dicientes y se usa en CalcularDenominaciones. Se añade prueba de un retiro con mas combinaciones">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Cajero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Cajero.cs" afterDir="false" />
     </list>
@@ -25,6 +25,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e14a4e27990972fa4ae94975603bd298aaf328ee083c03b10569ee4724d57/TestInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Cajero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Cajero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/CajeroTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" root0="FORCE_HIGHLIGHTING" />
@@ -271,13 +272,20 @@
       <option name="project" value="LOCAL" />
       <updated>1762228036368</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="🔵 Se devuelve una lista de lectura para no violar el principio de encapsulamiento y que la lista pueda ser modificada,&#10;se da nombre a la los atributos de la lista de denominaciones para que sean mas dicientes y se usa en CalcularDenominaciones. Se añade prueba de un retiro con mas combinaciones">
+      <option name="closed" value="true" />
+      <created>1762229054811</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1762229054811</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SiRetira2_Debe_Regresar1de2" />
     <MESSAGE value="SiRetira2_Debe_Regresar1de2" />
     <MESSAGE value="re nombrar variable del meotodo retirar para que sea mas diciente" />
     <MESSAGE value="SiRetira4_Debe_Regresar2de2" />
@@ -302,6 +310,7 @@
     <MESSAGE value="SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 500)" />
     <MESSAGE value=" se combinan a las pruebas de las denominaciones 1,2,5  cuando es el numero exacto" />
     <MESSAGE value=" se combinan a las pruebas de las denominaciones inexactas y que necesitan una combinacion para retiro de 4 y 6" />
-    <option name="LAST_COMMIT_MESSAGE" value=" se combinan a las pruebas de las denominaciones inexactas y que necesitan una combinacion para retiro de 4 y 6" />
+    <MESSAGE value=" Se devuelve una lista de lectura para no violar el principio de encapsulamiento y que la lista pueda ser modificada,&#10;se da nombre a la los atributos de la lista de denominaciones para que sean mas dicientes y se usa en CalcularDenominaciones. Se añade prueba de un retiro con mas combinaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Se devuelve una lista de lectura para no violar el principio de encapsulamiento y que la lista pueda ser modificada,&#10;se da nombre a la los atributos de la lista de denominaciones para que sean mas dicientes y se usa en CalcularDenominaciones. Se añade prueba de un retiro con mas combinaciones" />
   </component>
 </project>

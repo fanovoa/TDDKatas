@@ -1,18 +1,21 @@
 ﻿namespace TDDKatas;
 
+public readonly record struct Dinero(int Valor, TipoDinero Tipo);
+
+public enum TipoDinero {Billete, Moneda}
 
 public class Cajero
 {
-    private static List<(int Valor, string Tipo)> _Denominaciones = [
-        (500,"billete"),
-        (200,"billete"),
-        (100,"billete"),
-        (50,"billete"),
-        (20,"billete"),
-        (10,"billete"),
-        (5,"billete"), 
-        (2,"moneda"), 
-        (1,"moneda")
+    private static List<Dinero> _Denominaciones = [
+        new(500,TipoDinero.Billete),
+        new(200,TipoDinero.Billete),
+        new(100,TipoDinero.Billete),
+        new(50,TipoDinero.Billete),
+        new(20,TipoDinero.Billete),
+        new(10,TipoDinero.Billete),
+        new(5,TipoDinero.Billete), 
+        new(2,TipoDinero.Moneda), 
+        new(1,TipoDinero.Moneda)
     ];
 
     public IReadOnlyList<(int Cantidad,int Denominacion)> Retirar(int cantidad)
