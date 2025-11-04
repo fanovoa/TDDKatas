@@ -15,8 +15,8 @@ public class CajeroTests
 
 public class Cajero
 {
-    public object Retirar(int i)
+    public List<(int,int)> Retirar(int i)
     {
-        throw new NotImplementedException();
+        return [(1,1)];
     }
 }
