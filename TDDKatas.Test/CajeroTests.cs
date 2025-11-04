@@ -55,7 +55,7 @@ public class CajeroTests
     public void SiRetira20_Debe_Regresar1de20()
     {
         var cajero = new Cajero();
-        var denominaciones = cajero.Retirar(12);
+        var denominaciones = cajero.Retirar(20);
         denominaciones.Should().BeEquivalentTo((new List<(int, int)>{(1, 20)}));
     }
 }
