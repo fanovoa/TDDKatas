@@ -33,6 +33,7 @@ public class Cajero
 {
     public List<(int,int)> Retirar(int cantidad)
     {
+        if (cantidad == 4) return [(2, 2)];
         if (cantidad == 2) return [(1, 2)];
         return [(1,1)];
     }
