@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚SiRetira20_Debe_Regresar1de20" />
+    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚 SiRetira50_Debe_Regresar1de50">
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762226446670</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="🔴SiRetira50_Debe_Regresar1de50">
+      <option name="closed" value="true" />
+      <created>1762226502029</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1762226502029</updated>
+    </task>
+    <task id="LOCAL-00022" summary="💚 SiRetira50_Debe_Regresar1de50">
+      <option name="closed" value="true" />
+      <created>1762226522948</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1762226522948</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -220,6 +238,8 @@
     <MESSAGE value="SiRetira10_Debe_Regresar1de10" />
     <MESSAGE value=" SiRetira20_Debe_Regresar1de20" />
     <MESSAGE value="SiRetira20_Debe_Regresar1de20" />
-    <option name="LAST_COMMIT_MESSAGE" value="SiRetira20_Debe_Regresar1de20" />
+    <MESSAGE value="SiRetira50_Debe_Regresar1de50" />
+    <MESSAGE value=" SiRetira50_Debe_Regresar1de50" />
+    <option name="LAST_COMMIT_MESSAGE" value=" SiRetira50_Debe_Regresar1de50" />
   </component>
 </project>
