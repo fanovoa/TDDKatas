@@ -3,6 +3,7 @@
 public class Cajero
 {
     private static List<(int,string)> _Denominaciones = [
+        (200,"billete"),
         (100,"billete"),
         (50,"billete"),
         (20,"billete"),

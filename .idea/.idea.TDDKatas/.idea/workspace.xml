@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚 SiRetira50_Debe_Regresar1de50">
+    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 100)">
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Cajero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Cajero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +214,31 @@
       <option name="project" value="LOCAL" />
       <updated>1762226522948</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="🔵Se refactoriza las pruebas de 10,20,50 con el resultado de una sola denominacion para estos">
+      <option name="closed" value="true" />
+      <created>1762227165867</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1762227165867</updated>
+    </task>
+    <task id="LOCAL-00024" summary="🔴 SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 100)">
+      <option name="closed" value="true" />
+      <created>1762227209238</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1762227209238</updated>
+    </task>
+    <task id="LOCAL-00025" summary="💚SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 100)">
+      <option name="closed" value="true" />
+      <created>1762227232139</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1762227232139</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -240,6 +265,9 @@
     <MESSAGE value="SiRetira20_Debe_Regresar1de20" />
     <MESSAGE value="SiRetira50_Debe_Regresar1de50" />
     <MESSAGE value=" SiRetira50_Debe_Regresar1de50" />
-    <option name="LAST_COMMIT_MESSAGE" value=" SiRetira50_Debe_Regresar1de50" />
+    <MESSAGE value="Se refactoriza las pruebas de 10,20,50 con el resultado de una sola denominacion para estos" />
+    <MESSAGE value=" SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 100)" />
+    <MESSAGE value="SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 100)" />
+    <option name="LAST_COMMIT_MESSAGE" value="SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 100)" />
   </component>
 </project>
