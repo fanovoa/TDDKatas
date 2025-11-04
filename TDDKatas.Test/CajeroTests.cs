@@ -6,22 +6,6 @@ public class CajeroTests
 {
    
     
-    [Fact]
-    public void SiRetira4_Debe_Regresar2de2()
-    {
-        var cajero = new Cajero();
-        var denominaciones = cajero.Retirar(4);
-        denominaciones.Should().BeEquivalentTo((new List<(int, int)>{(2, 2)}));
-    }
-
-    [Fact]
-    public void SiRetira6_Debe_Regresar1de5y1de1()
-    {
-        var cajero = new Cajero();
-        var denominaciones = cajero.Retirar(6);
-        denominaciones.Should().BeEquivalentTo((new List<(int, int)>{(1, 5),(1,1)}));
-    }
-    
     
     [Theory]
     [InlineData(1)]
@@ -41,5 +25,24 @@ public class CajeroTests
         
         
         denominaciones.Should().BeEquivalentTo( new List<(int, int)> { (1, cantidad) });
+    }
+
+    
+    [Theory]
+    [MemberData(nameof(CasosCombinados))]
+    public void SiRetiraUnaDenominacionInexacta_Debe_RegresarlasDenominacionesEsperadas(int cantidad, List<(int,int)> combinacionEsperada)
+    {
+        var cajero = new Cajero();
+        
+        var denominaciones = cajero.Retirar(cantidad);
+        
+        denominaciones.Should().BeEquivalentTo( combinacionEsperada);
+    }
+
+
+    public static IEnumerable<object[]> CasosCombinados()
+    {
+        yield return [4, new List<(int,int)>{ (2,2)}];
+        yield return [6, new List<(int,int)>{ (1,5), (1,1)}];
     }
 }
