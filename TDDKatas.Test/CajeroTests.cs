@@ -50,34 +50,12 @@ public class CajeroTests
         var denominaciones = cajero.Retirar(10);
         denominaciones.Should().BeEquivalentTo((new List<(int, int)>{(1, 10)}));
     }
-    
-}
 
-public class Cajero
-{
-    private static List<(int,string)> _Denominaciones = [
-        (10,"billete"),
-        (5,"billete"), 
-        (2,"moneda"), 
-        (1,"moneda")
-    ];
-
-    public List<(int,int)> Retirar(int cantidad)
+    [Fact]
+    public void SiRetira20_Debe_Regresar1de20()
     {
-        var dinero = new List<(int, int)>();
-
-
-        foreach (var denominacion in _Denominaciones)
-        {
-            var cantidadDeDinero = cantidad / denominacion.Item1;
-            if (cantidadDeDinero >0 )
-            {
-                dinero.Add((cantidadDeDinero,denominacion.Item1));
-                cantidad -= ( cantidadDeDinero * denominacion.Item1);
-            }
-            
-        }
-        
-        return dinero;
+        var cajero = new Cajero();
+        var denominaciones = cajero.Retirar(12);
+        denominaciones.Should().BeEquivalentTo((new List<(int, int)>{(1, 20)}));
     }
 }
