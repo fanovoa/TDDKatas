@@ -52,10 +52,17 @@ public class Cajero
         var dinero = new List<(int, int)>();
 
         var cantidadDeDinero = cantidad / 2;
-
+        
         if (cantidad == 5)
         {
             dinero.Add((1, 5));
+            return dinero;
+        }
+
+        if (cantidad > 5)
+        {
+            dinero.Add((1,5));
+            dinero.Add((1,1));
             return dinero;
         }
 
