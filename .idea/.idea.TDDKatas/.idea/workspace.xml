@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚 SiRetira6_Debe_Regresar1de5y1de1">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" afterDir="false" />
-    </list>
+    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="💚SiRetira20_Debe_Regresar1de20" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +155,47 @@
       <option name="project" value="LOCAL" />
       <updated>1762222215015</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="🔵 Manejo de denominaciones para retiro dentro de un foreach ya que es mas practico">
+      <option name="closed" value="true" />
+      <created>1762226035859</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1762226035859</updated>
+    </task>
+    <task id="LOCAL-00017" summary="🔴 SiRetira10_Debe_Regresar1de10">
+      <option name="closed" value="true" />
+      <created>1762226181307</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1762226181307</updated>
+    </task>
+    <task id="LOCAL-00018" summary="💚SiRetira10_Debe_Regresar1de10">
+      <option name="closed" value="true" />
+      <created>1762226222612</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1762226222612</updated>
+    </task>
+    <task id="LOCAL-00019" summary="🔴 SiRetira20_Debe_Regresar1de20">
+      <option name="closed" value="true" />
+      <created>1762226416656</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1762226416656</updated>
+    </task>
+    <task id="LOCAL-00020" summary="💚SiRetira20_Debe_Regresar1de20">
+      <option name="closed" value="true" />
+      <created>1762226446670</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1762226446670</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
@@ -178,6 +215,11 @@
     <MESSAGE value=" Se realiza ajustes para monedas o valores de 1 y 2" />
     <MESSAGE value=" SiRetira6_Debe_Regresar1de5y1de1" />
     <MESSAGE value=" SiRetira6_Debe_Regresar1de5y1de1" />
-    <option name="LAST_COMMIT_MESSAGE" value=" SiRetira6_Debe_Regresar1de5y1de1" />
+    <MESSAGE value=" Manejo de denominaciones para retiro dentro de un foreach ya que es mas practico" />
+    <MESSAGE value=" SiRetira10_Debe_Regresar1de10" />
+    <MESSAGE value="SiRetira10_Debe_Regresar1de10" />
+    <MESSAGE value=" SiRetira20_Debe_Regresar1de20" />
+    <MESSAGE value="SiRetira20_Debe_Regresar1de20" />
+    <option name="LAST_COMMIT_MESSAGE" value="SiRetira20_Debe_Regresar1de20" />
   </component>
 </project>
