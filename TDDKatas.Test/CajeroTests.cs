@@ -23,9 +23,9 @@ public class CajeroTests
 
 public class Cajero
 {
-    public List<(int,int)> Retirar(int i)
+    public List<(int,int)> Retirar(int cantidad)
     {
-        if (i == 2) return [(1, 2)];
+        if (cantidad == 2) return [(1, 2)];
         return [(1,1)];
     }
 }
