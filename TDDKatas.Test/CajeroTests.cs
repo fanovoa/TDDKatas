@@ -25,7 +25,7 @@ public class Cajero
 {
     public List<(int,int)> Retirar(int i)
     {
-        
+        if (i == 2) return [(1, 2)];
         return [(1,1)];
     }
 }
