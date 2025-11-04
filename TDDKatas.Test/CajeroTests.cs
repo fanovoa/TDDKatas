@@ -43,24 +43,24 @@ public class Cajero
     {
         var dinero = new List<(int, int)>();
 
+        var cantidadDeDinero = cantidad / 2;
+
         if (cantidad == 5)
         {
             dinero.Add((1, 5));
+            return dinero;
+        }
+
+        if (cantidadDeDinero > 0)
+        {
+            dinero.Add((cantidadDeDinero,2));
+            cantidad -= ( cantidadDeDinero * 2);
+            
         }
         
-        if (cantidad == 4)
+        if (cantidad >0)
         {
-            dinero.Add((2,2));
-        }
-
-        if (cantidad == 2)
-        {
-            dinero.Add((1,2));
-        };
-
-        if (cantidad == 1)
-        {
-            dinero.Add((1,1));
+            dinero.Add((1,cantidad));
         }
         return dinero;
     }
