@@ -48,6 +48,7 @@ public class CajeroTests
     [InlineData(10)]
     [InlineData(20)]
     [InlineData(50)]
+    [InlineData(100)]
     public void SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada(int cantidad)
     {
         var cajero = new Cajero();
