@@ -55,7 +55,12 @@ public class CajeroTests
 
 public class Cajero
 {
-    private static List<(int,string)> _Denominaciones = [(5,"billete"), (2,"moneda"), (1,"moneda")];
+    private static List<(int,string)> _Denominaciones = [
+        (10,"billete"),
+        (5,"billete"), 
+        (2,"moneda"), 
+        (1,"moneda")
+    ];
 
     public List<(int,int)> Retirar(int cantidad)
     {
