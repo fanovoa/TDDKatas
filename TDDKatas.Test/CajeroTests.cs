@@ -17,7 +17,7 @@ public class CajeroTests
     {
         var cajero = new Cajero();
         var denominaciones = cajero.Retirar(2);
-        denominaciones.Should().BeEquivalentTo((new List<(int, int)>{(2, 1)}));
+        denominaciones.Should().BeEquivalentTo((new List<(int, int)>{(1, 2)}));
     }
 }
 
@@ -25,6 +25,7 @@ public class Cajero
 {
     public List<(int,int)> Retirar(int i)
     {
+        
         return [(1,1)];
     }
 }
