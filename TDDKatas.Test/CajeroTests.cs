@@ -42,6 +42,11 @@ public class Cajero
     public List<(int,int)> Retirar(int cantidad)
     {
         var dinero = new List<(int, int)>();
+
+        if (cantidad == 5)
+        {
+            dinero.Add((1, 5));
+        }
         
         if (cantidad == 4)
         {
