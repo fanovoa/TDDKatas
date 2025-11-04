@@ -1,8 +1,9 @@
 ﻿namespace TDDKatas;
 
+
 public class Cajero
 {
-    private static List<(int,string)> _Denominaciones = [
+    private static List<(int Valor, string Tipo)> _Denominaciones = [
         (500,"billete"),
         (200,"billete"),
         (100,"billete"),
@@ -14,20 +15,22 @@ public class Cajero
         (1,"moneda")
     ];
 
-    public List<(int,int)> Retirar(int cantidad)
+    public IReadOnlyList<(int Cantidad,int Denominacion)> Retirar(int cantidad)
+    {
+        return CalcularDenominaciones(cantidad).AsReadOnly();
+    }
+
+    private static List<(int, int)> CalcularDenominaciones(int cantidad)
     {
         var dinero = new List<(int, int)>();
-
-
-        foreach (var denominacion in _Denominaciones)
+        
+        foreach (var (valor,_) in _Denominaciones)
         {
-            var cantidadDeDinero = cantidad / denominacion.Item1;
-            if (cantidadDeDinero >0 )
-            {
-                dinero.Add((cantidadDeDinero,denominacion.Item1));
-                cantidad -= ( cantidadDeDinero * denominacion.Item1);
-            }
-            
+            var cantidadDeDinero = cantidad / valor;
+            if (cantidadDeDinero <= 0) continue;
+            dinero.Add((cantidadDeDinero,valor));
+            cantidad -= ( cantidadDeDinero * valor);
+
         }
         
         return dinero;

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="🔵 se combinan a las pruebas de las denominaciones 1,2,5  cuando es el numero exacto">
+    <list default="true" id="8df8c268-bd5b-4daf-a611-f96747727bb6" name="Changes" comment="🔵 se combinan a las pruebas de las denominaciones inexactas y que necesitan una combinacion para retiro de 4 y 6">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TDDKatas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDDKatas.Test/Cajero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TDDKatas.Test/Cajero.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e14a4e27990972fa4ae94975603bd298aaf328ee083c03b10569ee4724d57/TestInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8a243f75215d958afa80cf80a41b4981a44efea7db93bffcdaf7bd6ba378c0/Number.Parsing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Cajero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/CajeroTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TDDKatas.Test/CajeroTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/victor.novoa/RiderProjects/TDDKatas/TDDKatas.Test/Contrasena/Validador.cs" root0="SKIP_HIGHLIGHTING" />
@@ -262,13 +263,20 @@
       <option name="project" value="LOCAL" />
       <updated>1762227428593</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="🔵 se combinan a las pruebas de las denominaciones inexactas y que necesitan una combinacion para retiro de 4 y 6">
+      <option name="closed" value="true" />
+      <created>1762228036368</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1762228036368</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SiRetira1_Debe_Regresar1de1" />
     <MESSAGE value="SiRetira2_Debe_Regresar1de2" />
     <MESSAGE value="SiRetira2_Debe_Regresar1de2" />
     <MESSAGE value="re nombrar variable del meotodo retirar para que sea mas diciente" />
@@ -293,6 +301,7 @@
     <MESSAGE value="SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 200)" />
     <MESSAGE value="SiRetiraCantidadExactaDeDenominacionConfigurada_Debe_Regresar1deEsaDenominacionConfigurada (para billete de 500)" />
     <MESSAGE value=" se combinan a las pruebas de las denominaciones 1,2,5  cuando es el numero exacto" />
-    <option name="LAST_COMMIT_MESSAGE" value=" se combinan a las pruebas de las denominaciones 1,2,5  cuando es el numero exacto" />
+    <MESSAGE value=" se combinan a las pruebas de las denominaciones inexactas y que necesitan una combinacion para retiro de 4 y 6" />
+    <option name="LAST_COMMIT_MESSAGE" value=" se combinan a las pruebas de las denominaciones inexactas y que necesitan una combinacion para retiro de 4 y 6" />
   </component>
 </project>

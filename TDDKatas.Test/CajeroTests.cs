@@ -44,5 +44,6 @@ public class CajeroTests
     {
         yield return [4, new List<(int,int)>{ (2,2)}];
         yield return [6, new List<(int,int)>{ (1,5), (1,1)}];
+        yield return [432, new List<(int,int)>{ (2,200), (1,20),(1,10),(1,2)}];
     }
 }
