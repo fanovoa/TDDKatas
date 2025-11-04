@@ -33,8 +33,22 @@ public class Cajero
 {
     public List<(int,int)> Retirar(int cantidad)
     {
-        if (cantidad == 4) return [(2, 2)];
-        if (cantidad == 2) return [(1, 2)];
-        return [(1,1)];
+        var dinero = new List<(int, int)>();
+        
+        if (cantidad == 4)
+        {
+            dinero.Add((2,2));
+        }
+
+        if (cantidad == 2)
+        {
+            dinero.Add((1,2));
+        };
+
+        if (cantidad == 1)
+        {
+            dinero.Add((1,1));
+        }
+        return dinero;
     }
 }
